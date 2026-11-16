@@ -1,0 +1,2596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="価格チェック">
+  <title>買い物価格チェッカー</title>
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAdkUlEQVR4Xu2dCZRVxZnHq+qub+2dLUATVidoyxLZNJpJiBtmdEzcEsdkjImTZYzHMTNxcjLjJGCO40wSs6hJABGdmJlRR1lUcANEAlHABmNMswiCQC/09ta7Vc35qppnC7z37u1+NP2a+p13jIbX/S7v/u+/vvrqq69w/bdbkURyMoj8WiT5kOKQSHFIgiOdQyKdQxIc6RwS6RyS4EjnkEjnkARHOodEOockONI5JNI5JMGRziGRziEJjnQOiXQOSXCkc0ikc0iCI51DIp1DEhzpHBLpHJLgSOeQSOeQBEc6h0Q6hyQ40jkk0jkkwZHOIZHOIQmOdA6JdA5JcKRzSKRzSIIjnUMinUMSHOkcEukckuBI55BI55AERzqHRDqHJDjSOSTSOSTBkc4hkc4hCY50Dol0Dklw1OA/MijAONhlMBbs/UUJdAEl//SBoSzFQRlyXOZfHoRgjaASyoMxZLt+fx9DSFMw8X+5g4byEwdlKGrgygjxKMKo+C3HGGUs1pFiSon0wRjSVDSqSqHF5CEuTyGoM8WSFis7fZSZODBGnodiIbzijsqwAQ9j4QeSIUQwOtRBL7+vM20zBRcXU2FUgo4m2ff/OvKN+SGXIqXgxwvxpCy24L7OrgxT1DIbX8pMHIyhkIb+fMh7eqt1yydDrJg4BOOHKZ85W/+vTdmqCPZo310bI2R7qC5GbphrmlrxcUJc3qMbs38+7NXFsNuPjz4tlN9U1mMobKCHXsokMowxGGUYg9uQ7+VReMMX5pma0t8HlxCUzLL55+gjK2FQK/ChuQvrSrOHXspETewVG4MGIeUnDsZQWMe7m73/2pQlGP4TY3hA870U/lecNUGbPk5L9W/gZwypCuhM3MgCH4r5hRGMlm/MvNvihbT+6vK0UH7iQAjMI2LgxevAPIQ+CuMxkMi1sw3LhRvWNwiG6GFavTp3osb4LyyAUEZHii5ZV662gVB5ikNEHruPeI+9lsUYRpbCiLDxypnG6GpiuUVi2HwQjCwXXTvbVAiorTCU+9myDdl9bdQsT9soV3H0mIcJ5tHtwzxgjkNRTZRcdq6RzMKcNiiYK2NUFblypoFQsUkKt42jSbp0QyZWntGGIPj3NDgQ5rGnxXvstYwf8xDALEPvS2xIMISilzXodTGeXyk4NgnbWLo+e+AoNcpt+tqbchVH78jDj3lABoyh6fXqrPFqKhs4H8UYMjTQVtFHg3LbaO2my8rcNsrYORDqMY+9LXT5Rl/mIR7o6+eajhcsLAXbsNh547WZH/UVimKMFq/LvN9R3rZR3uIQ5hE18JJ1ma508WmLmKdcPs0YV6dknQArZwQj20XXzTEhdikYigrbaO6iyzdm42a/Em6DgTIeVoR5mJpf8xBhaUUIXzFdT1qQSvcDxijroPpacsV0X6EoxujXL2cOd1Jd7W+q/rRT3uIQ5hEz8ZL12U4f5iECyevnmFHD72Ot8DHlimlGZRh+pEAoKmzjUAd97LVsPOT39w9myl4cwjz2tXjLXy0eeRCeFJk6Wp03WQPz8PG39ygk3K7noWiRRT4e0/zq5XRzN9WVsreNso85BBB5hPDS9ZmONC2aMBXp1Bvmmn5W4BQCtjF3onbOGBWMIb+YhG0cbPd+uylbESq/NbaT4uPZGfSAeahoXyt9ZEPxhCmoB6GLz9EnDleydvGw1KUwwRHxTQGEbTz4YqY1wTRl0H9l/hgK4ugxDxM/vCHTkSpiHpAx4yPFVTONFK/wyIcIRScMUy5t0MFj879TmMr+Nu93m8E2/HhSWTBExNETebTSZT7MQwSVn59txgv6v8JX2q6cYcCCe8FQFGwDoQdezLQnwTaKLbyUDUNEHD3TlhCYR3uySM5DxCWTRyhzJxYKS12K4iF87RyYwRaZpBC0t8X7ny1DyjaGSEAqEJHHe230YR/TFrGQ+/lZhihEPREIRbPsE1O0KSN5KJp/TBHlXr98Md2ZYuoQso0hJY6ceSxbnzmaLBJ5iJt98TlGfU3ebCljxUNRoZtdR7wn/2BVhIfIJCXH0BlWhHkYKjpwlD68vsi0pSdbGsaXNOgnhqVQsG6jSSOV+VN1KFHO/yWJaOMXL6ShfnhIfZdDzjk+MI9XM0cTxXMeYmQx1OPLhRSM0ja7cqYR0jHNM+4g1DNJeeew99Qb1lCapAxN58iZx8F2urTYtEUs4s/8qDat/vjaUpeiyjC+ZhbPihaINrht/HxNOtWnAqLBz5CzQgQJ75iJH9mQaePmUaCI0OMRw19//EO1pcdCUciSFQhFKYV3vv2++8y2oWkbQy0g7Zm2IIg8DrbTJethtaVAZlNkwP5qhjG8gtjeB9MWxtB1fAZbKCvKf/Zna9JpixUISsqaIegcuchj+avZ1oKRh6gvHFlJ5k/Vk1m4xxCKOmzSCOVTU3lWNM/XQylYzo4D7srtdgVfrR2SDE1xiGnL+x2wM6BwhWluHU7lIQiEohb67AwjrPOsaL57fsw2snbgisMyYmiKI1fnsfzVbEt3oWmLCEvnTNLOHaumbUYZZEU/P6tQVlREKtv3uavftOND1zaGZszRE3lw8zjUWdw8KIPt0dfMMW0PZrDzJhbJigo7+dnatO0OZdsYyuLITVuWb8w2c/PIN20R2dKrP26MriIZG1QichgnxePRxht7necah+wkZcjmOXojpi2HO+niVwpNW0S2tDYGYWklz5kW2LYk0h73r0m7XvFakHJnyMYcAo+vrD72Wra5q5B5wIyXL+LffFEoavCs6MliUWEbm3c7a3faQ6NKtDDlLQ6MYbZJcN4XxlBh2txVJOdB+D79eZO0f706UmAxRSjm52vTol9Pgc+FP+IT47KmzJq39AYj5HjIchjcg/wFNtCggRfwfWGeOa62UNJTkO+Gejwl+sJb9tNbrZiJu0Ah+eHJN0MrcS+yAaZcxYERrIDUxci4OkJpwcJw3lSjI8Vea3LG1SqQ2OjTAy1sYFOTPW+SVnx7NC8c3NdK2xIUMigDfFdLBK7/dmuJftWAohDUnmRf+aT5H1+I+fzgvqqi79z528SSddnqaLmmUMvVOQSi55Mw/KKUKgIo2itGBMIKKd44ZJBT3uIQS+riNWD4+awBvqRThI8nTnKmIsUhyUt5DyuMwZxFdH0MAG/35md0yEU2RSZEJ9DTiDLYZQ06ylgcIpGgElg2O6VARivgDkdxSYaGy1of5SoO2KWio8b33PvXpAvvKzkOaP3moM+dZ4wfBjmPot29RFHPc412SPc1T8mZDcFweWaQnxpslKs4KEMhHTfudzY1OX7a4+dQCepM07NHq+OHQba0cAsXIbvX9zrffTxRHSX++1OLS4oYcJFFO2EOWspVHD2F5hoOwxpqABSCNJXoQf7eIQ3Xxkl18L7pHk/DlC9BvqTBBwSkAb99hpDrBbtnlMGPiMj3jOIUx3KScqa8nQOW7APmRhU+u/E/jxVJWJX4ytAfh8july9lLA6Mke1A1Wegbx/OTUoz2w3wQ5bD2pJwl4MOK2Ed62Xb+ByhshWHOMNg3mTt+jmmywu0fCKaijaMhaei6E+JN1x4lr7s1ripBVhIE0XLv9uc3dTkRIxynbCUq3OIdMWUkcp1vB64bxQdXIQ4Jg5XJg4PmAXjbN/vvPJHJ2r6OIluUFKu4hChgOWA1ftcss8BRX5BFnKhKoDvmfaPuCQrSJ/kQUgZi0PoQ1Ry+Knn6DMQkAaSBifQ8s1xfMjS+CFlp4XyFsfQAI4D49MuODSOn1rn9IqXoZKZFzOLrOtAzoDKXhy5U/gCEdQIgj674qoKg49t1HY8lLWY2OZvaEhXcW0M42PukczStI2yDhNDlalhXYVhcQDSr2UvDviK+VN1Sgn6+wtfEoyGGDTRnQIJ1cXJ9HHqjHrtrI8o9TVKVYSMqCCwwZ9XvXakaGeaHWz39rZ42951dx50Dx71Mg4K67BwI5zmFFHe4hAFpIM2ID0xA4Z5LGK5qCPLaqL4qo8bl51rzJukjarKm6qOmcrYGtQwpudOpSy24z13zQ5rzU77nUOerqKoeaokUq7V56K6OGbi6iiv/Pf9aCsYJbLsZzfFzp+sFVWVeMPTW627n0zBqQn+n1F+Se1Jmuh1KpRCYI2mK81GVZEvnm9eN8fMzZB51RKljMHfA3yF5GJSj4I18BZTWCHwEj6RzLLnGq2l67Nb9jiGCj2ZAxc9FaOMnYNg1J1h7akgyU7+4HalWMrydZ/Fm7rSrOmwWx0LvMNAhXvZcwd4qQCLh/B3rgjffFFoZCX8gUcRZRQhpimKlmfGRZQPpViEhggiURNfM9v83CxzxTbr/ufT2/e7lWFMCC9aKxFlLA7I7xKk+TxU5xgKQbZePDfaG5XA6B7SAotDHJUtGia3Jdil5+p3Xx05axR85y6FP1Qw1o51D9rTcXDb4Xfeadt/JNl2sLsl7WYVTChjY+LDq0MVk2vGzhg55azacREtJK7NpR5iRFWgifulDfovXsjc/3zacljEKFk71PIWh/DbQODgEZyYQIpXUEQqzKXsX66O3HFZmN9UhBFVYDoC5rH18Durd218Yc+WpqP727PdYmRRCfy5GJtc6jE4lx1FNHN0fPj5YxoWTL7g4vFzwhqkhl3qYURMDd95efjCKdptjyaaDnvVUex6Qa/0JJS3OAY5CkFpi1VFyM++FJ8/VeexA8LYUzCMFCubXl287el1+7cm7Yyp6KZm1IWrxN+od94rNxXzqHewu+WRxlXLGldNrRt/3dSLvzrjqtpwJUOMMkYZnjVBe+47VX+/PLH6TasmUgL/kOI4VSgEZhZ1cfLEbRVTRqp8dZBhgghSXj/09qINS57dvYlgHDMidWGDMeZQrz3TXeBqdEU1VSOk6QjhvR3vf+/lB5Y1rvzO3JtumXElb5roeVSpiuDHvh7/1iOJ5Rszw+Kkn/4hxXFKEJ5RFydP3lY5eaTClUEJH0cWbljy75setTy7KhSHW8qoyzzKaFQPzxvTcNKrYYxhjA8n2vZ0HNSIyhA1VT2smUeSR7+2atETf3rpl5f/44Sq0S71KANP+sWXYP/woxuzdfF+jS9SHKUHTr13UGWEPMGVwbsSegQrzan2W1YsXL1rY02oIqQZHu2JCwgmaSd77ojJq274SYGrWbLtma+uWjgsUs1FwCjzdEUbHql+Zd/rn1x26wMLvvvZyZ/wqIcxFE7/4ksx12P/vdmqifVdH7JMsPQwaBzCHro5NoV7BsJUIcqO5l3zH/3G87s3DY9UI8RyysjB7/fJX7YHkxubOselgvlg5FaZ8W47dd0Td92/5XGFKIyB5ihDP7kxdt54tTvd9479UhwlRiXQC+R7V0YuOksXo4mCyVstexb89vY97Qdrw5UOzVsTTTAkv/K98i0SuNQzFD2ih25//j/vfe0RoQ/Gt248dHM8Hsa2W7xy5aRIcZQSqEHMsEsb9NsuCfMGYgwj3JJqv+Gp7x3NdFUYUYcGS9n5BDJpDA2LVn/v5Qf+548vKERBmHoUjR+m3HtdNGX1sSWmFEfJEM2GogZedG2094z0lpUL32ndV2FE7VOjjNxnMcYqzOjXVt3T2LxLwUTo43OzzCum6119GlykOEqGSMzf+qnQhGEQhEKogcm9rz2ysunV2giMJr7Xf/oIZUwlikPdr6z4QdJO8/oPSNt9/6pI2PcJ3L2R4igNULPoolFV5JZPhnjWHJTR2Ny06NWltaFKxzslo8mJeJTGjcjWw+8senUpwZC49yiaNEK9+jyjK82C7jiX4igNsNibYX9zgVkXJ2KHLWPs7nW/tqnDSzMGDsfzakIVv9r61J/a3lUIgaU9hL71mXCMn5MayL0G9LoHD2JRxu+r2HWLppfVMfyFeSZfiPEIJs/v+f2qXRsrzfiJs9ZTDAwuCSu9cMMS0YqZUSignz9Vh/qBIDc8yHuHEKL6XFU+aCmW6y3W+1/EG4qu+xJ+zuinP6bX1yr8BCf4Vh/a+qRIiQ48LvUqzNizuzf9+eh+gokH2RP0xfP5Ho6iSu/F6bn60wtGsE8umWVdGfhngZd4Q0b0wS0IQ2jBNIPviqME453Nu9ft2xo3IgNuGz2ohCSs1MNvroT/xnD9sydq4+uUbJCcxxmXPvcoChv4rv9Oar63G1gOg660eYpoYFemi4bHyfmTNV5HDs/mM03rk3a6Llzl8nzlwEMZDavmmj2/v/uirxmq7lEWNfDcSdqjG7Om5rek7YwTh9jt0pnmVusPcmx3zEnBCNQz86NqXZww6JZMKKNr92wxVYNXeZ0eKGOmpje17d92+J15Yxo8Cin82RO15RuzxUzwA85EcUAJWaDdjQW3FYnNtzPHabz0hmoKea+7uenoflPReY3OBxBMPigN/fD/rxJFRCoFIBirRFHztCfjI9qHXIpgknXtTQcaYbGXK2JGvRozsf+OJmeoOHy7RnGgXAujs0aB3IQbbT38dnu6qypc0ftuYYyTdjrr2kQMPB8Wh2ulOjKJwh+WcSw71dGGsfNhEYjNThihCjPW2xUYVJSpmw/u5HMW+JOxNUptDLd0U1311cnuDBVHCaG8qWF9LYhDxK1/bNnrMdr7PhGMM4518YQ5k2vGup4HmQ9xYjEHI2J5dn3lyHxXJfxm+sizvn7Bl6NG+EOjFXc1+AdDj/9xje06ud1QjDFdUXd3vG+5tqFCHVpIxyMrlfc7qOGvMYQUR38Rh8lVRz8QQ3OyPXeHjgFu0ZVN/vv82/rweWJKfGH99Avrp+f78V++/r+d2URMj+SkwxhTiNJpJZJO1lBhjFMIhs5mvjeFn4lT2RKCMWxFqYyQuhg4h4gbDnQ3q0TpHfDyQq/Qun1vfPmZuxliWdd2qXfcyyu2p4AydsKPeJZnI4Se273p9jX/GdFCrFcIzHg2rDubPJJs48dlwmg2pkbxeh2vXCTKKeE3dcYizmXKHeSTdqwTay9c6g2P1jy649kl258xVWiBKKLL3Mt/QJr7EYyxrmiHEm3fePbesGYSTI6LZjAEKK7lgoAEgZZXpDhKQ++7IqK/E/EorTLj31l7//Yjf1aJ4vVvostXACDUuHXVokPdLaE8M2eMeu2eQyjQ3FqKowQcl2LP14qd72IiNiyp/zBhpWCW0Y9Zk0c9hSiLNi5dvWtjdagC9jjloff1BGpkIsXRLxg/risBuzLhmRRmMCY+3IW1t5P4h8doTI80Nu+6fc2PxapH3z7eo1Qlyot7/7Bww1JRenji78EIu9SLG9ERkVreAA2u50gnhamSv0+V4ugvCoaVmk7eTEEYAWw0ym8JLnXrwpXL3ly5ePvTKlEKPPF5nYBRQvChROtXVy40VK3ALnJKIRCOGbDTDlo68F2ZRdcRc0hx9BdCoLPKwXZwdSGJSTVjCo8XEHyE4neuvf/NI01Bgw8RajAINe45lGjNF2rwpAu2qfORWF1MD3OHw47HjnR5quJ3X6cUR3+B0lEPvdsCA4QYSKaPmBLVQwWmpiL4cKn7tyv+LWjwIUKNe3yEGjBV8dzpI6b07LpGqDVBWxNUU3ylR4f4WfYDA89So237nFye42N140fHR1iec9KwQ+BB5iOys3l3oOBDhBov7N3CQ40qt3DFMuzJxuePPVdsY0EIvX3Q60gyzfe6knSO/kLh5Be844CbdSAF6VIaUo15YxsybrZwsY9L3dqe4OMZP8FHLtS4ddU9PNQoElc61B0Zq503GsQhrmTLHsfxnQGTzlECGEO6ig4c9XYegPVO3ocHXTX5Ij+/+ljw8dOimY9joQa7ddU9BxN5sxo5VKKk7MzcMQ3Do9UeoyqBLsqbdjmB+jBL5ygBCkYZBz3faPPudZCm/MuPfnxq3fiUU8Q8RPDhUPfmFT/sLpj5OBZqPAxbbc1CWQ0BKBSjmxou5/2DYDWl6Yi74z03HORwICmOEkAZ9PZ7ttFKWUxRILsQ1swbGy5P2umiZaQi87HzyK478mc++KMPocYiHmoU3TZHMEnZ6XOGTfrM+NkMQY8ojND/vWElrWD7ZqU4SoBYDf/TIW/tTjAPxAhj7OZpn51cPTbjZk9YoT0eCD4ilUvfXLl420mCDwg1MDmUaP3aqnt0HmoUhWBsuc4/zP2irmhQA6bgtMX+d4sVMaB7qX+kOEqDWLj/9SsZ3oAQe4xWhyr++RN/222lVN7HpzD8/fE7Xzg++IDtE3wDBWQ18i+g9AaW6bPJi8bNuOHsS/jKMNjG45uze1u8UMDTKqU4SgNl0A90yy5nzQ6LN4OE1PiN51x26YS57dnufLV9OaDYggcfX1nxg96ZD1H76WcBRYAR9qBvhyoKR6DvIMYZm/3qpUxY95v7yiHFUTJg2qKh+1ZDSz9YsmdYIcqDC75bF67MupbP4KOxeffta3uWXUSocWwBpXiowRMtytFU1z2f+uaMkWfxajRCMPrNukzTEa8P51RKcZQMMA8Db9vvPvRShi9+wuAyrnLUr674Z8tzGILWTYU/rGfZZfvKxTzzgRA6lGj76qpFhqIVS2oAuqK2pju+PO2Kb8261oMtEUQh6N1W76fPp+MhXKyW6CRIcZQSj6KqML5vdXrbPhf0wYhLvQWTLrh3/m1tqU44Wq6YPnjmI3bn2p82NjcpmNyy8ocQamhG0Y0UmqK2pDouGHvugwvuotwzEO/9fcdjiUQGsqJBItEepDhKCYR/BG7J1x/u7kxDyxSCYd31tlnX/Wj+N9sz3ZTRwhVfPPOhZF3r9ud//P1XHly7Z3NVKF545RYj2LLQkuo4f8y5T11zHy8zwx6F5sk/WpF6+W2nIhy4vW5PBFP/7dZSfj0SvtTSnmKXT9Mf+3oFzz/B1mqFKI+/teYbq++1qRPXI4VzFQRj23Nsz43qocKeoRCFUq8t0/WlhgUPXnEXX6RllGJVQU+9bt2yuLsq+FnJMiA9hbgUVUfw6u32tx5JiCN2MFY86t1w9iUv3vTAX9SMa061ixrSfBdBGdMULaqHCyiDYNgK1ZVN2tT9ySV3LLvq7t7KeK7R+vtHEhBq9GE4OYZ0jlOFSlBrAjp2iK6gPPsEHV0SdvoH6xcv3f5Mwk7FjSivU4de9z6vA2pC+Vw5ZWdtz76wfsY9n/7mrFFT+Y4ELDzjuUbr5t90awT+XYpjkKIqqLWb3TDX/PGN0bAOvVNyrWp3NO/60cZla/b8vttKhTXTVA3YCScSXmKLUu7x5Q2uRZ0wb2LpJO0Mxvicugm3zbn+poYFogBAHL+MMXriD9a3H02Is5X7owyYbsmY45SiKuhogp03Qf35TfEpI6F7B9x4DCkvhNBbLXuW71i9ds/mXUcPZD1bI4qmaComSq/G+B71PEYdz7U96EM6MlY7e/TZN5592WWT5umKBo3PwXaIkMLCp1P3r0lHTazg/ipDimMgUBU4saUyTBZeExGn4PJTcyify4BEsq79xqG3XzvQuPngW+92HurMJrqtFG8wBwXqcSMS0UIfiQ+bMWLKnNHnzBvTMCpWJ66bz2KIykeZpsPeP/0u8fLbTm0M4gzfw1QhpHMMBAqBAx9TFrt8mnHXX4U/9hHYhUohD0Exhn1puYuwPSdhpZtTR/mWazhvZUS0OqqH40Yk9x6PwYE8GAJSkEUiy37zSuaXL6S7M6wi3Pdm1icixTFAiMNBO9PQROXKmcbffTokJCLqLXjJBZzNky8LwmAvJIwfGJPc+UNdafa7zdkl6zO7DnuxENYU8KQSIsUxoCg8RdadgVZBf/kx/Ya55txJWjz0QVqdxxB8X+uxg+t4t+ueXSc5dh5wV2yznnzderfFC+korJf+gDcZc5wehESSWZiSjKtTZk/Q5kzSpterY2qUil5C6Y3lspZu9tYB9w97nM27nZ0H3JTFwgYOaafwgFnpHKcNsTMx66CMDdPXqIlrY3CibGUEj6tVlGOHXjZ307YEbe6EXQUdKeZSKBwJ6ZAdL1XgmQ/Zn+O0IeIDXYVDpsUUprWbHurwxEm5uUSHwrfwawpSFVwRhoU7cdpcacOLkyLFcZqBc5OPCUFT4axysXCbC0N6zmPn/zMAguiNFMcgQoShfVlcPzXIJXtJXqQ4JFIckuBI55BI55AERzqHRDqHJDjSOSTSOSTBkc4hkc4hCc7/A2jymat4Ydt5AAAAAElFTkSuQmCC">
+  <style>
+/* 買い物価格チェッカー スタイル
+ * 片手操作・買い物中の数秒操作を想定し、ボタンと価格を大きくしています。
+ */
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #1c1e21;
+  --sub: #666b73;
+  --line: #e3e5e8;
+  --primary: #1f6feb;
+  --cheap: #138a43;
+  --cheap-bg: #e6f6ec;
+  --normal: #8a6d00;
+  --normal-bg: #fdf6dd;
+  --expensive: #c62828;
+  --expensive-bg: #fde8e8;
+  --unknown: #5f6670;
+  --unknown-bg: #eef0f2;
+  --radius: 14px;
+  --nav-h: 64px;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  font-size: 17px; line-height: 1.5;
+  padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 16px);
+}
+header.top {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(245, 246, 248, .94); backdrop-filter: blur(8px);
+  padding: calc(env(safe-area-inset-top) + 10px) 16px 10px;
+  display: flex; align-items: center; gap: 8px;
+  border-bottom: 1px solid var(--line);
+}
+header.top h1 { font-size: 18px; margin: 0; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+header.top button.back { border: 0; background: none; font-size: 17px; color: var(--primary); padding: 6px 4px; }
+main { padding: 14px 14px 0; max-width: 640px; margin: 0 auto; }
+
+/* 下部ナビ（親指で届く位置） */
+nav.bottom {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  display: flex; background: #fff; border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+nav.bottom a {
+  flex: 1; height: var(--nav-h); display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--sub); font-size: 12px; gap: 2px;
+}
+nav.bottom a .ic { font-size: 22px; line-height: 1; }
+nav.bottom a.active { color: var(--primary); font-weight: 600; }
+
+.card { background: var(--card); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+.card h2 { font-size: 17px; margin: 0 0 10px; }
+.card h3 { font-size: 15px; margin: 14px 0 6px; color: var(--sub); }
+.sub { color: var(--sub); font-size: 14px; }
+.small { font-size: 13px; color: var(--sub); }
+.center { text-align: center; }
+.row { display: flex; gap: 10px; align-items: center; }
+.row > * { flex: 1; }
+.grow { flex: 1; }
+.hidden { display: none !important; }
+
+/* ボタン */
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 54px; padding: 12px 16px; margin: 8px 0;
+  font-size: 17px; font-weight: 600; border-radius: 12px; border: 0;
+  background: var(--primary); color: #fff; text-decoration: none; cursor: pointer;
+}
+.btn.secondary { background: #e8effc; color: var(--primary); }
+.btn.ghost { background: transparent; color: var(--primary); border: 1px solid var(--line); }
+.btn.danger { background: #fde8e8; color: var(--expensive); }
+.btn.small { min-height: 42px; font-size: 15px; padding: 8px 12px; margin: 4px 0; }
+.btn:disabled { opacity: .5; }
+.btn-inline { display: inline-flex; width: auto; }
+
+.home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.home-grid a {
+  background: var(--card); border-radius: var(--radius); padding: 18px 12px; min-height: 108px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+  text-decoration: none; color: var(--text); font-weight: 600; font-size: 16px; text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.home-grid a .ic { font-size: 34px; }
+.home-grid a.big { grid-column: span 2; background: var(--primary); color: #fff; min-height: 120px; font-size: 20px; }
+
+/* 入力欄 */
+label.f { display: block; margin: 12px 0 4px; font-size: 14px; color: var(--sub); font-weight: 600; }
+input, select, textarea {
+  width: 100%; font-size: 17px; padding: 12px; border-radius: 10px; border: 1px solid #cfd3d8;
+  background: #fff; color: var(--text); font-family: inherit;
+}
+input[type=checkbox], input[type=radio] { width: 22px; height: 22px; vertical-align: middle; }
+.check { display: flex; align-items: center; gap: 10px; margin: 10px 0; font-size: 16px; }
+textarea { min-height: 120px; }
+input.price-input { font-size: 34px; font-weight: 700; text-align: right; padding: 10px 14px; }
+.price-wrap { position: relative; }
+.price-wrap::after { content: '円'; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font-size: 20px; color: var(--sub); pointer-events: none; }
+.price-wrap input { padding-right: 46px; }
+
+/* 判定表示 */
+.verdict { border-radius: var(--radius); padding: 14px; margin: 6px 0 10px; text-align: center; }
+.verdict .lv { font-size: 40px; font-weight: 800; line-height: 1.1; }
+.verdict .hl { font-size: 17px; font-weight: 700; margin-top: 4px; }
+.verdict.cheap { background: var(--cheap-bg); color: var(--cheap); }
+.verdict.normal { background: var(--normal-bg); color: var(--normal); }
+.verdict.expensive { background: var(--expensive-bg); color: var(--expensive); }
+.verdict.unknown { background: var(--unknown-bg); color: var(--unknown); }
+.verdict.unknown .lv { font-size: 26px; }
+
+.big-price { font-size: 30px; font-weight: 800; }
+table.kv { width: 100%; border-collapse: collapse; font-size: 15px; }
+table.kv td { padding: 7px 2px; border-bottom: 1px solid var(--line); }
+table.kv td:last-child { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.plus { color: var(--expensive); }
+.minus { color: var(--cheap); }
+
+.badge { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 99px; font-weight: 700; vertical-align: middle; }
+.badge.確定 { background: var(--cheap-bg); color: var(--cheap); }
+.badge.暫定 { background: var(--normal-bg); color: var(--normal); }
+.badge.未特定 { background: var(--expensive-bg); color: var(--expensive); }
+.badge.sample { background: #ede7f6; color: #5e35b1; }
+
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { padding: 12px 2px; border-bottom: 1px solid var(--line); }
+.list li:last-child { border-bottom: 0; }
+.list a.item { display: flex; gap: 10px; align-items: center; color: inherit; text-decoration: none; }
+.list .thumb { width: 48px; height: 48px; border-radius: 8px; object-fit: cover; background: var(--unknown-bg); flex: none; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.list .name { font-weight: 600; }
+.offer { font-size: 14px; }
+.offer .p { font-weight: 700; font-size: 16px; }
+.offer a { color: var(--primary); word-break: break-all; }
+
+.notice { background: #fff8e1; border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; font-size: 15px; }
+.notice.info { background: #e8effc; }
+.notice.error { background: var(--expensive-bg); color: var(--expensive); }
+
+#reader { width: 100%; border-radius: 12px; overflow: hidden; background: #000; min-height: 240px; }
+#reader video { width: 100% !important; }
+
+.progress { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.progress > div { height: 100%; background: var(--primary); width: 0; transition: width .2s; }
+
+.receipt-item { border: 1px solid var(--line); border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+.receipt-item .row input { padding: 9px; font-size: 16px; }
+.receipt-item.excluded { opacity: .45; }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 14px); transform: translateX(-50%);
+  background: rgba(28,30,33,.92); color: #fff; padding: 12px 18px; border-radius: 12px; font-size: 15px; z-index: 50;
+  max-width: 90vw; text-align: center;
+}
+details summary { cursor: pointer; color: var(--primary); font-size: 15px; padding: 6px 0; }
+svg.chart { width: 100%; height: auto; }
+.spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid var(--line); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+</style>
+</head>
+<body>
+  <header class="top">
+    <button class="back hidden" id="backBtn" type="button">‹ 戻る</button>
+    <h1 id="title">買い物価格チェッカー</h1>
+  </header>
+
+  <main id="view"></main>
+
+  <nav class="bottom">
+    <a href="#home" data-nav="home"><span class="ic">🏠</span>ホーム</a>
+    <a href="#scan" data-nav="scan"><span class="ic">📷</span>スキャン</a>
+    <a href="#receipt" data-nav="receipt"><span class="ic">🧾</span>レシート</a>
+    <a href="#history" data-nav="history"><span class="ic">📈</span>履歴</a>
+    <a href="#settings" data-nav="settings"><span class="ic">⚙️</span>設定</a>
+  </nav>
+
+  <!-- 読み込み順に意味があります（後のファイルが前のファイルを使います） -->
+  <script>
+/*
+ * units.js — 内容量・単価の計算
+ *
+ * 単価の基準:
+ *   ml（mL, L） → 100mlあたり
+ *   g（kg）     → 100gあたり
+ *   個（本・枚・袋・缶・パックなど） → 1個あたり
+ */
+const Units = (() => {
+  const UNIT_OPTIONS = ['ml', 'g', '個'];
+
+  /** 全角英数字・記号を半角に、カタカナの単位表記も統一 */
+  function normalize(str) {
+    return String(str || '')
+      .replace(/[！-～]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0))
+      .replace(/　/g, ' ')
+      .replace(/ミリリットル|ミリ/g, 'ml')
+      .replace(/リットル/g, 'L')
+      .replace(/キログラム|キロ/g, 'kg')
+      .replace(/グラム/g, 'g')
+      .replace(/ｍｌ|ｍＬ/g, 'ml');
+  }
+
+  /** 単位を ml / g / 個 にそろえ、数値も換算する */
+  function toBase(size, unit) {
+    const n = Number(size);
+    if (!isFinite(n) || n <= 0) return null;
+    const u = String(unit || '').toLowerCase();
+    if (u === 'ml' || u === 'cc') return { size: n, unit: 'ml' };
+    if (u === 'l') return { size: n * 1000, unit: 'ml' };
+    if (u === 'g') return { size: n, unit: 'g' };
+    if (u === 'kg') return { size: n * 1000, unit: 'g' };
+    return { size: n, unit: '個' };
+  }
+
+  /** 単価の基準量（100ml・100g・1個） */
+  function baseAmount(unit) { return unit === '個' ? 1 : 100; }
+  function baseLabel(unit) { return unit === '個' ? '1個あたり' : `100${unit}あたり`; }
+
+  /**
+   * 単価を計算する
+   * price: 1つあたりの価格, size: 内容量, unit: 'ml'|'g'|'個'
+   * 例: 500ml 398円 → 79.6（100mlあたり）
+   */
+  function unitPrice(price, size, unit) {
+    const b = toBase(size, unit);
+    if (!b || !isFinite(Number(price))) return null;
+    return Number(price) / b.size * baseAmount(b.unit);
+  }
+
+  /**
+   * 商品名から内容量・入数を読み取る
+   * 例: "お茶 500ml×24本" → { size: 500, unit: 'ml', pack: 24 }
+   *     "牛乳 1L"         → { size: 1000, unit: 'ml', pack: 1 }
+   * 読み取れない場合は null
+   */
+  function parseSize(name) {
+    const s = normalize(name);
+    const m = s.match(/(\d+(?:\.\d+)?)\s*(ml|mL|ML|cc|L|l|kg|KG|Kg|g|G)(?![a-zA-Z])/);
+    let pack = 1;
+    const packM =
+      s.match(/[×xX\*]\s*(\d+)\s*(本|個|缶|袋|パック|P|p|入|枚|コ|箱)?/) ||
+      s.match(/(\d+)\s*(本|缶|袋|パック|個|入り|入|枚|ロール|箱)\s*(セット|入り|入|組|×)?/) ||
+      s.match(/(\d+)\s*(ケース)/);
+    if (packM) {
+      const n = Number(packM[1]);
+      // ケースは入数が分からないため判定不能扱い
+      if (packM[2] === 'ケース') pack = NaN;
+      else if (n > 0 && n < 1000) pack = n;
+    }
+    if (/ケース/.test(s) && !packM) pack = NaN;
+    if (m) {
+      const b = toBase(Number(m[1]), m[2]);
+      // 「500ml」の後ろの数字を入数と誤認しないよう、入数の数字が容量と同じ場合は1
+      if (packM && Number(packM[1]) === Number(m[1]) && !/[×xX\*]/.test(packM[0])) pack = 1;
+      return b ? { size: b.size, unit: b.unit, pack } : null;
+    }
+    if (packM && isFinite(pack)) return { size: pack, unit: '個', pack: 1, countOnly: true };
+    return null;
+  }
+
+  /** 商品の確定状態: JANと容量がそろえば「確定」、名前だけなら「暫定」、名前もなければ「未特定」 */
+  function productStatus(p) {
+    if (p.forceStatus === '未特定') return '未特定';
+    const hasName = p.name && p.name.trim().length > 0;
+    const hasSize = Number(p.size) > 0 && p.unit;
+    if (p.jan && hasName && hasSize) return '確定';
+    if (hasName) return '暫定';
+    return '未特定';
+  }
+
+  /** JAN（EAN-13 / EAN-8）のチェックデジット検証 */
+  function isValidJan(code) {
+    const c = String(code || '').replace(/\D/g, '');
+    if (c.length !== 13 && c.length !== 8) return false;
+    const digits = c.split('').map(Number);
+    const check = digits.pop();
+    let sum = 0;
+    digits.reverse().forEach((d, i) => { sum += d * (i % 2 === 0 ? 3 : 1); });
+    return (10 - (sum % 10)) % 10 === check;
+  }
+
+  function yen(n) {
+    if (n === null || n === undefined || !isFinite(n)) return '—';
+    const r = Math.round(n * 10) / 10;
+    return r.toLocaleString('ja-JP', { maximumFractionDigits: Number.isInteger(r) ? 0 : 1 }) + '円';
+  }
+
+  function sizeLabel(size, unit) {
+    if (!size || !unit) return '容量不明';
+    if (unit === 'ml' && size >= 1000) return `${size / 1000}L`;
+    if (unit === 'g' && size >= 1000) return `${size / 1000}kg`;
+    return `${size}${unit}`;
+  }
+
+  return { UNIT_OPTIONS, normalize, toBase, baseAmount, baseLabel, unitPrice, parseSize, productStatus, isValidJan, yen, sizeLabel };
+})();
+
+</script>
+  <script>
+/*
+ * db.js — ブラウザ内データベース（IndexedDB）の読み書き
+ *
+ * 保存先はこのiPhoneのSafari内です。サーバーには送信しません。
+ * テーブル（ストア）一覧:
+ *   products      商品情報
+ *   purchases     購入履歴（商品とは別に管理。同じ商品でも購入ごとに1件追加）
+ *   marketFetches 市場価格の取得履歴
+ *   receipts      読み取ったレシート（二重登録防止用）
+ *   settings      設定（key と value の組）
+ */
+const DB = (() => {
+  const DB_NAME = 'kaimono-hikaku';
+  const DB_VERSION = 1;
+  const STORES = ['products', 'purchases', 'marketFetches', 'receipts', 'settings'];
+  let dbPromise = null;
+
+  function open() {
+    if (dbPromise) return dbPromise;
+    dbPromise = new Promise((resolve, reject) => {
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains('products')) {
+          const s = db.createObjectStore('products', { keyPath: 'id' });
+          s.createIndex('jan', 'jan', { unique: false });
+        }
+        if (!db.objectStoreNames.contains('purchases')) {
+          const s = db.createObjectStore('purchases', { keyPath: 'id' });
+          s.createIndex('productId', 'productId', { unique: false });
+        }
+        if (!db.objectStoreNames.contains('marketFetches')) {
+          const s = db.createObjectStore('marketFetches', { keyPath: 'id' });
+          s.createIndex('productId', 'productId', { unique: false });
+        }
+        if (!db.objectStoreNames.contains('receipts')) {
+          const s = db.createObjectStore('receipts', { keyPath: 'id' });
+          s.createIndex('hash', 'hash', { unique: false });
+        }
+        if (!db.objectStoreNames.contains('settings')) {
+          db.createObjectStore('settings', { keyPath: 'key' });
+        }
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+    return dbPromise;
+  }
+
+  function wrap(req) {
+    return new Promise((resolve, reject) => {
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+  }
+
+  async function tx(store, mode = 'readonly') {
+    const db = await open();
+    return db.transaction(store, mode).objectStore(store);
+  }
+
+  /** 新しいIDを作る（日時＋乱数） */
+  function newId(prefix) {
+    return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
+  }
+
+  async function put(store, obj) { return wrap((await tx(store, 'readwrite')).put(obj)); }
+  async function get(store, id) { return wrap((await tx(store)).get(id)); }
+  async function del(store, id) { return wrap((await tx(store, 'readwrite')).delete(id)); }
+  async function all(store) { return wrap((await tx(store)).getAll()); }
+  async function byIndex(store, index, value) {
+    return wrap((await tx(store)).index(index).getAll(value));
+  }
+
+  // ---- 設定 ----
+  const DEFAULT_SETTINGS = {
+    workerUrl: '',          // 価格取得サーバー（Cloudflare Worker）のURL
+    marketBasis: 'median',  // 市場価格の基準: 'median'(中央値) または 'mean'(平均)
+    cheapPct: 5,            // 基準より何%以上安ければ「安い」
+    expensivePct: 5,        // 基準より何%以上高ければ「高い」
+    lastBackupAt: null,
+    purchasesAtLastBackup: 0,
+  };
+  async function getSettings() {
+    const rows = await all('settings');
+    const s = { ...DEFAULT_SETTINGS };
+    rows.forEach(r => { s[r.key] = r.value; });
+    return s;
+  }
+  async function setSetting(key, value) { return put('settings', { key, value }); }
+
+  // ---- 商品 ----
+  async function findProductByJan(jan) {
+    if (!jan) return null;
+    const list = await byIndex('products', 'jan', jan);
+    return list[0] || null;
+  }
+
+  async function saveProduct(p) {
+    if (!p.id) p.id = newId('p');
+    if (!p.createdAt) p.createdAt = new Date().toISOString();
+    p.status = Units.productStatus(p);
+    await put('products', p);
+    // 確定状態が変わったら購入履歴側の状態も合わせる
+    const purchases = await byIndex('purchases', 'productId', p.id);
+    for (const pu of purchases) {
+      if (pu.status !== p.status) { pu.status = p.status; await put('purchases', pu); }
+    }
+    return p;
+  }
+
+  async function purchasesOf(productId) {
+    const list = await byIndex('purchases', 'productId', productId);
+    return list.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  }
+
+  async function deleteProduct(id) {
+    const purchases = await byIndex('purchases', 'productId', id);
+    if (purchases.length) throw new Error('購入履歴がある商品は削除できません。先に購入履歴を削除するか、別の商品に統合してください。');
+    await del('products', id);
+  }
+
+  /** 商品Aの購入履歴を商品Bへ移し、Aを削除（未特定商品をあとから特定したとき用） */
+  async function mergeProduct(fromId, toId) {
+    const to = await get('products', toId);
+    const purchases = await byIndex('purchases', 'productId', fromId);
+    for (const pu of purchases) { pu.productId = toId; pu.status = to.status; await put('purchases', pu); }
+    const fetches = await byIndex('marketFetches', 'productId', fromId);
+    for (const f of fetches) { f.productId = toId; await put('marketFetches', f); }
+    await del('products', fromId);
+  }
+
+  async function estimate() {
+    try {
+      if (navigator.storage && navigator.storage.estimate) return await navigator.storage.estimate();
+    } catch (e) { /* 対応していないブラウザ */ }
+    return null;
+  }
+
+  return {
+    open, newId, put, get, del, all, byIndex,
+    getSettings, setSetting, findProductByJan, saveProduct, purchasesOf,
+    deleteProduct, mergeProduct, estimate, STORES,
+  };
+})();
+
+</script>
+  <script>
+/*
+ * judge.js — 価格判定ロジック
+ *
+ * 市場価格の判定と購入履歴の判定は、必ず別々に計算・表示します。
+ * どちらも「単価」（100ml・100g・1個あたり）で比べます。
+ * 比較データがない場合は「判定不能」を返し、推測の価格は使いません。
+ */
+const Judge = (() => {
+  function stats(values) {
+    const v = values.filter(x => isFinite(x)).sort((a, b) => a - b);
+    if (!v.length) return null;
+    const sum = v.reduce((a, b) => a + b, 0);
+    const mid = Math.floor(v.length / 2);
+    const median = v.length % 2 ? v[mid] : (v[mid - 1] + v[mid]) / 2;
+    return { count: v.length, min: v[0], max: v[v.length - 1], mean: sum / v.length, median };
+  }
+
+  /**
+   * 市場価格との比較
+   * current: { price, size, unit } 店頭価格（1個あたり）と内容量
+   * offers:  同一商品と判定された販売価格の一覧（unitPrice 計算済み）
+   */
+  function market(current, offers, settings) {
+    const curUnit = Units.unitPrice(current.price, current.size, current.unit);
+    if (!offers || !offers.length) {
+      return { level: 'unknown', label: '判定不能', message: '市場価格を取得できませんでした' };
+    }
+    if (curUnit === null) {
+      return { level: 'unknown', label: '判定不能', message: '店頭価格または内容量が未入力のため判定できません' };
+    }
+    const free = offers.filter(o => o.shipping === '送料無料' || o.shipping === '送料込');
+    const paid = offers.filter(o => !(o.shipping === '送料無料' || o.shipping === '送料込'));
+    const sAll = stats(offers.map(o => o.unitPrice));
+    const sFree = stats(free.map(o => o.unitPrice));
+    const sPaid = stats(paid.map(o => o.unitPrice));
+
+    // 判定の基準: 送料無料の価格が3件以上あればそれを使い、なければ全件（送料別を含む）
+    const useFree = sFree && sFree.count >= 3;
+    const basisStats = useFree ? sFree : sAll;
+    const basisKey = settings.marketBasis === 'mean' ? 'mean' : 'median';
+    const basis = basisStats[basisKey];
+    const diffPct = (curUnit - basis) / basis * 100;
+
+    let level, label;
+    if (diffPct <= -settings.cheapPct) { level = 'cheap'; label = '安い'; }
+    else if (diffPct >= settings.expensivePct) { level = 'expensive'; label = '高い'; }
+    else { level = 'normal'; label = '普通'; }
+
+    const notes = [];
+    if (basisStats.count < 3) notes.push(`比較データが${basisStats.count}件と少ないため参考程度にしてください`);
+    if (!useFree && paid.length) notes.push('送料別の価格を含めて判定しています（実際の通販の支払額はこれより高くなります）');
+
+    return {
+      level, label, curUnit, basis, basisKey, diffPct, notes,
+      basisName: (useFree ? '送料無料の' : '全ての') + (basisKey === 'mean' ? '平均値' : '中央値'),
+      all: sAll, free: sFree, paid: sPaid,
+    };
+  }
+
+  /**
+   * 過去の購入履歴との比較
+   * purchases: 同じ商品の購入履歴（日付順）
+   */
+  function history(current, product, purchases) {
+    const curUnit = Units.unitPrice(current.price, current.size, current.unit);
+    const usable = purchases.filter(p => isFinite(p.unitPrice) && p.unitPrice > 0);
+    if (!usable.length) {
+      return { level: 'unknown', label: '判定不能', message: 'この商品の購入履歴がまだありません' };
+    }
+    // 容量がわかる場合は単価、わからない場合（暫定・未特定の商品）は1つあたりの価格で比較
+    const sizeKnown = Number(current.size) > 0 && current.unit;
+    const toCompare = p => sizeKnown ? Units.unitPrice(p.unitPrice, p.size || current.size, p.unit || current.unit) : p.unitPrice;
+    const cur = sizeKnown ? curUnit : Number(current.price);
+    const values = usable.map(toCompare).filter(x => isFinite(x));
+    const s = stats(values);
+    const latest = toCompare(usable[usable.length - 1]);
+    const latestPrice = usable[usable.length - 1].unitPrice;
+    const diffAvg = cur - s.mean;
+    const diffAvgPct = diffAvg / s.mean * 100;
+    const diffLatestPct = (cur - latest) / latest * 100;
+
+    let level, label, headline;
+    if (cur < s.min) { level = 'cheap'; label = '安い'; headline = '過去最安値を更新！買い推奨'; }
+    else if (cur === s.min) { level = 'cheap'; label = '安い'; headline = '過去最安値と同じ価格'; }
+    else if (diffAvgPct <= -3) { level = 'cheap'; label = '安い'; headline = '過去の平均より安い'; }
+    else if (diffAvgPct >= 3) { level = 'expensive'; label = '高い'; headline = '過去の平均より高い'; }
+    else { level = 'normal'; label = '普通'; headline = '過去の平均とほぼ同じ'; }
+
+    const notes = [];
+    if (s.count < 3) notes.push(`購入履歴が${s.count}件と少ないため参考程度にしてください`);
+    const discounted = usable.filter(p => p.priceKind && p.priceKind !== '通常').length;
+    if (discounted) notes.push(`履歴のうち${discounted}件はセール・クーポン等の価格です`);
+
+    return {
+      level, label, headline, sizeKnown, cur, s, latest, latestPrice, diffAvg, diffAvgPct, diffLatestPct, notes,
+      minPrice: Math.min(...usable.map(p => p.unitPrice)),
+      meanPrice: usable.reduce((a, p) => a + p.unitPrice, 0) / usable.length,
+    };
+  }
+
+  return { stats, market, history };
+})();
+
+</script>
+  <script>
+/*
+ * market.js — 市場価格の自動取得と「同一商品かどうか」の照合
+ *
+ * 価格取得サーバー（worker/worker.js を Cloudflare Workers に設置したもの）に問い合わせます。
+ * APIキーはサーバー側にあり、このファイルには含まれません。
+ *
+ * 照合ルール:
+ *   1. JANコードが一致した商品を優先（Yahoo!はJAN欄で、楽天は商品名・説明文のJAN記載で確認）
+ *   2. 商品名から容量を読み取り、登録商品の容量と違うものは除外
+ *   3. 「24本セット」のようなまとめ売りは1個あたりに換算。入数が分からないケース売りは除外
+ *   4. JANが無い場合は、メーカー名と商品名の単語が一致し、容量も一致するものだけ採用
+ *   5. 他と比べて極端に安い/高い価格（中央値の30%未満・300%超）は誤登録やセット品として除外
+ */
+const Market = (() => {
+  async function request(params) {
+    const settings = await DB.getSettings();
+    if (!settings.workerUrl) {
+      const e = new Error('価格取得サーバーが未設定です（設定画面でURLを入力してください）');
+      e.code = 'NO_WORKER';
+      throw e;
+    }
+    const base = settings.workerUrl.replace(/\/+$/, '');
+    const qs = new URLSearchParams(params).toString();
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 15000);
+    try {
+      const res = await fetch(`${base}/search?${qs}`, { signal: ctrl.signal });
+      if (!res.ok) throw new Error(`価格取得サーバーのエラー（HTTP ${res.status}）`);
+      return await res.json();
+    } catch (e) {
+      if (e.name === 'AbortError') throw new Error('価格取得がタイムアウトしました。電波状況を確認してください');
+      if (e instanceof TypeError) throw new Error('価格取得サーバーに接続できませんでした');
+      throw e;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
+  /** JANから商品名・メーカー・容量を調べる（商品を特定するため） */
+  async function lookupJan(jan) {
+    const data = await request({ jan });
+    if (!data.productGuess) return null;
+    const g = data.productGuess;
+    const size = Units.parseSize(g.name);
+    return {
+      jan,
+      name: cleanName(g.name),
+      maker: g.maker || '',
+      size: size && !size.countOnly && size.pack === 1 ? size.size : null,
+      unit: size && !size.countOnly && size.pack === 1 ? size.unit : null,
+      candidates: g.candidates || [],
+    };
+  }
+
+  /** 宣伝文（【】や［］の中身、送料無料などの語）を取り除いた商品名 */
+  function cleanName(name) {
+    return Units.normalize(name)
+      .replace(/【[^】]*】|\[[^\]]*\]|［[^］]*］|＜[^＞]*＞|<[^>]*>|★|☆|◆|■/g, ' ')
+      .replace(/送料無料|あす楽|ポイント\d+倍|最大\d+%OFF|クーポン|即日発送|セール|SALE/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function tokens(str) {
+    return Units.normalize(str).toLowerCase()
+      .replace(/\d+(\.\d+)?\s*(ml|l|g|kg|個|本|枚|袋|缶|入)/g, ' ')
+      .split(/[\s・\/\-_,、。()（）【】\[\]]+/)
+      .filter(t => t.length >= 2);
+  }
+
+  /** 1件の販売価格が登録商品と同一かを判定し、1個あたりの価格を計算 */
+  function evaluateOffer(o, product, viaJan) {
+    const r = { ...o, accepted: false, reason: '', note: '' };
+    const text = Units.normalize(o.name);
+    const parsed = Units.parseSize(o.name);
+    const isSet = /セット|ケース|まとめ買い|箱買い|詰め合わせ|アソート|お試し|訳あり|中古/.test(text);
+
+    // 1) 商品の一致
+    if (viaJan) {
+      if (o.jan && o.jan === product.jan) r.matchType = 'JAN一致';
+      else if (o.janInText) r.matchType = 'JAN記載一致';
+      else { r.reason = 'JANコードが一致しない'; return r; }
+    } else {
+      const pt = tokens(product.name);
+      const ot = tokens(o.name).join(' ');
+      const hit = pt.filter(t => ot.includes(t)).length;
+      const makerOk = !product.maker || Units.normalize(o.name + ' ' + (o.brand || '')).includes(Units.normalize(product.maker));
+      if (!makerOk) { r.reason = 'メーカー名が一致しない'; return r; }
+      if (!pt.length || hit / pt.length < 0.6) { r.reason = '商品名が一致しない'; return r; }
+      r.matchType = '商品名・容量一致';
+    }
+
+    // 2) 容量・入数
+    const hasSize = Number(product.size) > 0 && product.unit;
+    if (parsed && !parsed.countOnly && hasSize) {
+      if (parsed.unit !== product.unit || Math.abs(parsed.size - product.size) / product.size > 0.01) {
+        r.reason = `容量が異なる（${Units.sizeLabel(parsed.size, parsed.unit)}）`; return r;
+      }
+      if (!isFinite(parsed.pack)) { r.reason = '入数が分からないケース売り'; return r; }
+      r.pack = parsed.pack;
+    } else if (parsed && parsed.countOnly && !hasSize) {
+      r.pack = 1;
+    } else {
+      if (!viaJan) { r.reason = '商品名から容量を確認できない'; return r; }
+      if (isSet) { r.reason = 'セット品で入数が分からない'; return r; }
+      r.pack = 1;
+      r.note = '容量表記なし（JAN一致のため同一商品として扱う）';
+    }
+    if (isSet && r.pack === 1 && !/[×xX\*]\s*1(?!\d)/.test(text)) {
+      r.reason = 'セット品で入数が分からない'; return r;
+    }
+
+    r.perItem = o.price / r.pack;
+    if (r.pack > 1) r.note = `${r.pack}個セットを1個あたりに換算`;
+    r.unitPrice = hasSize ? Units.unitPrice(r.perItem, product.size, product.unit) : r.perItem;
+    r.accepted = true;
+    return r;
+  }
+
+  /**
+   * 商品の市場価格を取得して保存
+   * 戻り値: marketFetches に保存したレコード
+   */
+  async function fetchFor(product) {
+    const viaJan = !!product.jan;
+    const params = viaJan ? { jan: product.jan } : { q: [product.maker, product.name, product.size ? Units.sizeLabel(product.size, product.unit) : ''].filter(Boolean).join(' ') };
+    const record = {
+      id: DB.newId('m'),
+      productId: product.id,
+      jan: product.jan || '',
+      query: params,
+      fetchedAt: new Date().toISOString(),
+      ok: false,
+      sources: [],
+      offers: [],
+      error: '',
+    };
+    try {
+      if (!viaJan && (!product.name || !(product.size > 0))) {
+        throw new Error('JANコードが無い商品は、商品名と内容量を登録すると検索できます');
+      }
+      const data = await request(params);
+      record.fetchedAt = data.fetchedAt || record.fetchedAt;
+      record.sources = data.sources || [];
+      let evaluated = (data.offers || []).map(o => evaluateOffer(o, product, viaJan));
+
+      // 5) 外れ値の除外
+      const acc = evaluated.filter(o => o.accepted);
+      const s = Judge.stats(acc.map(o => o.unitPrice));
+      if (s && acc.length >= 4) {
+        evaluated = evaluated.map(o => {
+          if (o.accepted && (o.unitPrice < s.median * 0.3 || o.unitPrice > s.median * 3)) {
+            return { ...o, accepted: false, reason: '他の価格と比べて極端（誤登録・セット品の可能性）' };
+          }
+          return o;
+        });
+      }
+      // 同じ店の同じ価格の重複を除く
+      const seen = new Set();
+      evaluated = evaluated.filter(o => {
+        const k = `${o.source}|${o.shop}|${o.price}|${o.name}`;
+        if (seen.has(k)) return false;
+        seen.add(k); return true;
+      });
+      record.offers = evaluated;
+      record.ok = evaluated.some(o => o.accepted);
+      if (!record.ok) {
+        const failed = record.sources.filter(x => !x.ok).map(x => `${x.name}: ${x.error}`);
+        record.error = failed.length ? failed.join(' / ') : '同一商品の販売価格が見つかりませんでした';
+      }
+    } catch (e) {
+      record.error = e.message;
+      record.errorCode = e.code || '';
+    }
+    await DB.put('marketFetches', record);
+    return record;
+  }
+
+  async function latestFor(productId) {
+    const list = await DB.byIndex('marketFetches', 'productId', productId);
+    return list.sort((a, b) => (a.fetchedAt < b.fetchedAt ? 1 : -1))[0] || null;
+  }
+
+  /** 商品名（写真から読み取った文字など）で通販サイトを検索し、JANコード付きの商品候補を返す */
+  async function searchCandidates(q) {
+    const data = await request({ q });
+    return (data.candidates || []).map(c => {
+      const size = Units.parseSize(c.name);
+      return {
+        jan: c.jan, name: cleanName(c.name), maker: c.maker || '', count: c.count,
+        size: size && !size.countOnly && size.pack === 1 ? size.size : null,
+        unit: size && !size.countOnly && size.pack === 1 ? size.unit : null,
+      };
+    });
+  }
+
+  /**
+   * 写真（商品と値札が一緒に写ったもの）を価格取得サーバーに送り、AI（Gemini）で読み取る
+   * dataUrl: 縮小済みのJPEG画像
+   */
+  async function analyzePhoto(dataUrl) {
+    const settings = await DB.getSettings();
+    if (!settings.workerUrl) {
+      const e = new Error('価格取得サーバーが未設定です（設定画面でURLを入力してください）');
+      e.code = 'NO_WORKER'; throw e;
+    }
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 45000);
+    try {
+      const res = await fetch(settings.workerUrl.replace(/\/+$/, '') + '/analyze', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: dataUrl }), signal: ctrl.signal,
+      });
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error || '写真を読み取れませんでした');
+      return data.result;
+    } catch (e) {
+      if (e.name === 'AbortError') throw new Error('写真の読み取りがタイムアウトしました。電波状況を確認してください');
+      if (e instanceof TypeError) throw new Error('価格取得サーバーに接続できませんでした');
+      throw e;
+    } finally { clearTimeout(timer); }
+  }
+
+  async function testConnection(url) {
+    const res = await fetch(url.replace(/\/+$/, '') + '/health');
+    return res.json();
+  }
+
+  return { lookupJan, searchCandidates, analyzePhoto, fetchFor, latestFor, evaluateOffer, cleanName, testConnection };
+})();
+
+</script>
+  <script>
+/*
+ * scanner.js — カメラでJANコード（バーコード）を読み取る
+ *
+ * 使用ライブラリ: html5-qrcode（無料・Apache-2.0）を初回利用時にCDNから読み込みます。
+ * iPhoneのSafariでカメラを使うには、アプリが https:// で公開されている必要があります。
+ */
+const Scanner = (() => {
+  const LIB_URL = 'https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js';
+  let instance = null;
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      if (document.querySelector(`script[src="${src}"]`)) return resolve();
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = () => reject(new Error('読み取りライブラリを読み込めませんでした（インターネット接続を確認してください）'));
+      document.head.appendChild(s);
+    });
+  }
+
+  /**
+   * カメラを起動して読み取りを開始
+   * elementId: 映像を表示する要素のID
+   * onCode(jan): 正しいJANコードを読み取ったときに呼ばれる
+   */
+  async function start(elementId, onCode) {
+    if (!window.isSecureContext) {
+      throw new Error('カメラを使うには https:// のURLでアプリを開いてください');
+    }
+    await loadScript(LIB_URL);
+    await stop();
+    const F = window.Html5QrcodeSupportedFormats;
+    instance = new window.Html5Qrcode(elementId, {
+      formatsToSupport: [F.EAN_13, F.EAN_8, F.UPC_A],
+      verbose: false,
+    });
+    let done = false;
+    await instance.start(
+      { facingMode: 'environment' },
+      { fps: 12, qrbox: (w, h) => ({ width: Math.floor(w * 0.85), height: Math.floor(Math.min(h, w) * 0.4) }) },
+      text => {
+        if (done) return;
+        let code = String(text).replace(/\D/g, '');
+        if (code.length === 12) code = '0' + code; // UPC-A → EAN-13
+        if (!Units.isValidJan(code)) return;
+        done = true;
+        if (navigator.vibrate) navigator.vibrate(80);
+        stop().then(() => onCode(code));
+      },
+      () => {}
+    );
+  }
+
+  /**
+   * 撮影済みの写真（またはアルバムの画像）からJANコードを読み取る
+   * カメラの映像が使えない場合の代わりにも使えます
+   */
+  async function scanFile(file) {
+    await loadScript(LIB_URL);
+    let holder = document.getElementById('reader-file');
+    if (!holder) {
+      holder = document.createElement('div');
+      holder.id = 'reader-file';
+      holder.style.display = 'none';
+      document.body.appendChild(holder);
+    }
+    const F = window.Html5QrcodeSupportedFormats;
+    const reader = new window.Html5Qrcode('reader-file', { formatsToSupport: [F.EAN_13, F.EAN_8, F.UPC_A], verbose: false });
+    try {
+      const text = await reader.scanFile(file, false);
+      let code = String(text).replace(/\D/g, '');
+      if (code.length === 12) code = '0' + code;
+      if (!Units.isValidJan(code)) throw new Error('JANコードとして正しくない数字でした');
+      return code;
+    } catch (e) {
+      if (e && e.message && e.message.includes('JAN')) throw e;
+      throw new Error('写真からバーコードを見つけられませんでした。バーコードを大きく、ピントを合わせて撮影してください');
+    } finally {
+      try { reader.clear(); } catch (_) { /* 何もしない */ }
+    }
+  }
+
+  async function stop() {
+    if (instance) {
+      try { if (instance.isScanning) await instance.stop(); } catch (e) { /* 既に停止 */ }
+      try { instance.clear(); } catch (e) { /* 何もしない */ }
+      instance = null;
+    }
+  }
+
+  return { start, stop, scanFile, loadScript };
+})();
+
+</script>
+  <script>
+/*
+ * receipt.js — レシートの文字読み取り（OCR）と内容の抽出
+ *
+ * 使用ライブラリ: Tesseract.js（無料・Apache-2.0）。ブラウザ内で処理するため、
+ * レシート画像は外部に送信されません。初回のみ日本語データ（約15MB）をダウンロードします。
+ *
+ * レシートの書式は店ごとに違うため、抽出結果は必ず確認画面で修正できるようにしています。
+ */
+const Receipt = (() => {
+  const LIB_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
+
+  /** 画像を縮小・白黒化して読み取りやすくする */
+  async function preprocess(file) {
+    const img = await new Promise((resolve, reject) => {
+      const i = new Image();
+      i.onload = () => resolve(i);
+      i.onerror = () => reject(new Error('画像を読み込めませんでした'));
+      i.src = URL.createObjectURL(file);
+    });
+    const maxW = 1400;
+    const scale = Math.min(1, maxW / img.width);
+    const c = document.createElement('canvas');
+    c.width = Math.round(img.width * scale);
+    c.height = Math.round(img.height * scale);
+    const ctx = c.getContext('2d');
+    ctx.drawImage(img, 0, 0, c.width, c.height);
+    const d = ctx.getImageData(0, 0, c.width, c.height);
+    for (let i = 0; i < d.data.length; i += 4) {
+      const g = 0.299 * d.data[i] + 0.587 * d.data[i + 1] + 0.114 * d.data[i + 2];
+      const v = g > 150 ? 255 : g < 90 ? 0 : (g - 90) * 4.25; // コントラストを強める
+      d.data[i] = d.data[i + 1] = d.data[i + 2] = v;
+    }
+    ctx.putImageData(d, 0, 0);
+    URL.revokeObjectURL(img.src);
+    return c;
+  }
+
+  async function recognize(file, onProgress) {
+    await Scanner.loadScript(LIB_URL);
+    const canvas = await preprocess(file);
+    const result = await window.Tesseract.recognize(canvas, 'jpn', {
+      logger: m => {
+        if (!onProgress) return;
+        const label = m.status === 'recognizing text' ? '文字を読み取り中' :
+          m.status && m.status.includes('load') ? '日本語データを準備中' : '準備中';
+        onProgress(label, m.progress || 0);
+      },
+    });
+    return result.data.text;
+  }
+
+  const SKIP = /小計|合計|総計|お預|預り|釣|おつり|現金|クレジット|カード|電子マネー|ポイント|対象|税込|税抜|消費税|内税|外税|税率|点数|買上|レジ|責任者|担当|領収|TEL|電話|No\.|ﾚｼﾞ|登録番号|ありがとう|またのご来店|営業時間|支払|QR|PayPay|楽天ペイ|d払い|残高/i;
+
+  function toNum(s) { return Number(String(s).replace(/[,，.、\s]/g, '')); }
+
+  /**
+   * OCRで読み取った文字から、店舗名・購入日・商品・合計を取り出す
+   */
+  function parse(rawText) {
+    const lines = Units.normalize(rawText).split(/\r?\n/).map(l => l.replace(/\s+/g, ' ').trim()).filter(Boolean);
+    const out = { store: '', date: '', total: null, items: [] };
+
+    // 日付: 2026年11月14日 / 2026/11/14 / 26/11/14
+    for (const l of lines) {
+      let m = l.match(/(20\d{2})\s*[年\/\.\-]\s*(\d{1,2})\s*[月\/\.\-]\s*(\d{1,2})/);
+      if (!m) {
+        const m2 = l.match(/(?:^|\D)(\d{2})[\/\.](\d{1,2})[\/\.](\d{1,2})(?:\D|$)/);
+        if (m2) m = [null, '20' + m2[1], m2[2], m2[3]];
+      }
+      if (m) {
+        const mo = Number(m[2]), d = Number(m[3]);
+        if (mo >= 1 && mo <= 12 && d >= 1 && d <= 31) {
+          out.date = `${m[1]}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+          break;
+        }
+      }
+    }
+
+    // 店舗名: 先頭の数行のうち、数字や記号ばかりでない最初の行
+    for (const l of lines.slice(0, 6)) {
+      if (/\d{2,}-\d{2,}|TEL|電話|〒|領収|レシート/.test(l)) continue;
+      if (l.replace(/[^぀-ヿ一-鿿A-Za-z]/g, '').length >= 2) { out.store = l.slice(0, 30); break; }
+    }
+
+    // 合計
+    for (const l of lines) {
+      const m = l.match(/(?:合計|総計|お買上計|お買上げ計)\D*?([\d,]+)\s*円?/);
+      if (m) { out.total = toNum(m[1]); break; }
+    }
+
+    // 商品行: 「商品名 … 価格」の形
+    let pendingQty = null;
+    for (let i = 0; i < lines.length; i++) {
+      const l = lines[i];
+      // 「2個 X 単198」「@198 x 2」などの数量行
+      const q = l.match(/(\d+)\s*(?:個|点|コ)?\s*[xX×\*]\s*(?:単|@)?\s*[¥\\]?([\d,]+)/) || l.match(/@\s*([\d,]+)\s*[xX×\*]\s*(\d+)/);
+      if (q) {
+        let qty, unit;
+        if (/@/.test(l) && l.indexOf('@') < l.search(/[xX×\*]/)) { unit = toNum(q[1]); qty = Number(q[2]); }
+        else { qty = Number(q[1]); unit = toNum(q[2]); }
+        if (qty > 0 && qty < 100 && unit > 0) {
+          const last = out.items[out.items.length - 1];
+          if (last && Math.abs(last.total - qty * unit) <= 1) { last.quantity = qty; continue; }
+          pendingQty = { qty, unit };
+          continue;
+        }
+      }
+      // 値引き行
+      const disc = l.match(/(値引|割引|クーポン|まとめ|Off|OFF)\D*?[-−ー▲△]\s*[¥\\]?([\d,]+)/);
+      if (disc && out.items.length) {
+        const last = out.items[out.items.length - 1];
+        last.discount = (last.discount || 0) + toNum(disc[2]);
+        last.priceKind = /クーポン/.test(disc[1]) ? 'クーポン利用' : 'セール';
+        continue;
+      }
+      if (SKIP.test(l)) continue;
+      if (/20\d{2}\s*[年\/\.\-]\s*\d{1,2}|\d{1,2}\s*:\s*\d{2}/.test(l)) continue; // 日付・時刻の行
+      const m = l.match(/^(.*?[぀-ヿ一-鿿A-Za-z].*?)\s*[¥\\]?\s*([\d,]{2,7})\s*(?:円)?\s*[※*軽外内非8%＊]*\s*$/);
+      if (!m) continue;
+      let name = m[1].replace(/^[\d\s*※#]+/, '').replace(/[¥\\]$/, '').trim();
+      const price = toNum(m[2]);
+      if (!name || name.length < 2 || !(price > 0) || price > 100000) continue;
+      const item = { name, total: price, quantity: 1, discount: 0, priceKind: '通常' };
+      if (pendingQty && Math.abs(pendingQty.qty * pendingQty.unit - price) <= 1) item.quantity = pendingQty.qty;
+      pendingQty = null;
+      out.items.push(item);
+    }
+    return out;
+  }
+
+  /** 二重登録の確認用に、店舗・日付・合計・商品から指紋を作る */
+  async function fingerprint(r) {
+    const src = [r.store, r.date, r.total, ...r.items.map(i => `${i.name}:${i.total}`)].join('|');
+    if (window.crypto && crypto.subtle) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(src));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+    let h = 0; for (let i = 0; i < src.length; i++) h = (h * 31 + src.charCodeAt(i)) | 0;
+    return 'h' + h;
+  }
+
+  /** 商品名の似ている登録済み商品を探す */
+  function bestMatch(name, products) {
+    // 容量表記（500mlなど）や空白を除いて比べる
+    const clean = x => Units.normalize(x).toLowerCase().replace(/\d+(\.\d+)?\s*(ml|l|g|kg|cc)(?![a-z])/g, '').replace(/[\s・]/g, '');
+    const n = clean(name);
+    let best = null, bestScore = 0;
+    for (const p of products) {
+      const aliases = [p.name, ...(p.receiptNames || [])];
+      for (const a of aliases) {
+        const t = clean(a);
+        if (!t) continue;
+        let score = 0;
+        if (t === n) score = 1;
+        else if (t.includes(n) || n.includes(t)) score = Math.min(n.length, t.length) / Math.max(n.length, t.length) * 0.9;
+        else {
+          // 2文字ずつの一致率
+          const grams = s => { const g = new Set(); for (let i = 0; i < s.length - 1; i++) g.add(s.slice(i, i + 2)); return g; };
+          const A = grams(n), B = grams(t);
+          let inter = 0; A.forEach(x => { if (B.has(x)) inter++; });
+          score = A.size + B.size ? (2 * inter) / (A.size + B.size) * 0.8 : 0;
+        }
+        if (score > bestScore) { bestScore = score; best = p; }
+      }
+    }
+    return bestScore >= 0.55 ? { product: best, score: bestScore } : null;
+  }
+
+  return { recognize, parse, fingerprint, bestMatch };
+})();
+
+</script>
+  <script>
+/*
+ * photo.js — 商品本体と値札の写真から文字を読み取る
+ *
+ * 値札の写真   → 価格（税込を優先）と、書いてあれば商品名
+ * 商品の写真   → パッケージの文字（商品名・容量）→ 登録済み商品と通販サイトから候補を探す
+ *
+ * Tesseract.js（無料）でiPhoneの中で読み取ります。写真は外部に送信しません。
+ * ※ パッケージはロゴや飾り文字が多いため、商品名の読み取りは外れることがあります。
+ *   最後は必ず候補の中から自分で選ぶ仕組みにしています。
+ */
+const Photo = (() => {
+  const LIB_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
+
+  /** 写真を縮小し、白黒（グレー）にしてコントラストを上げる。2値化はしない（色付き値札で文字が消えるため） */
+  async function prepare(file, maxW = 1600) {
+    const img = await new Promise((resolve, reject) => {
+      const i = new Image();
+      i.onload = () => resolve(i);
+      i.onerror = () => reject(new Error('画像を読み込めませんでした'));
+      i.src = URL.createObjectURL(file);
+    });
+    const scale = Math.min(1, maxW / Math.max(img.width, img.height));
+    const c = document.createElement('canvas');
+    c.width = Math.round(img.width * scale);
+    c.height = Math.round(img.height * scale);
+    const ctx = c.getContext('2d');
+    ctx.drawImage(img, 0, 0, c.width, c.height);
+    const d = ctx.getImageData(0, 0, c.width, c.height);
+    let min = 255, max = 0;
+    const g = new Uint8ClampedArray(d.data.length / 4);
+    for (let i = 0, j = 0; i < d.data.length; i += 4, j++) {
+      // 赤い文字（値札に多い）も濃く写るよう、明るさの最小値も使う
+      const lum = 0.299 * d.data[i] + 0.587 * d.data[i + 1] + 0.114 * d.data[i + 2];
+      const v = Math.min(lum, Math.min(d.data[i], d.data[i + 1], d.data[i + 2]) + 40);
+      g[j] = v; if (v < min) min = v; if (v > max) max = v;
+    }
+    const range = Math.max(1, max - min);
+    for (let i = 0, j = 0; i < d.data.length; i += 4, j++) {
+      const v = (g[j] - min) / range * 255;
+      d.data[i] = d.data[i + 1] = d.data[i + 2] = v;
+    }
+    ctx.putImageData(d, 0, 0);
+    URL.revokeObjectURL(img.src);
+    return c;
+  }
+
+  async function recognize(file, onProgress) {
+    await Scanner.loadScript(LIB_URL);
+    const canvas = await prepare(file);
+    const r = await window.Tesseract.recognize(canvas, 'jpn', {
+      logger: m => {
+        if (!onProgress) return;
+        const label = m.status === 'recognizing text' ? '文字を読み取り中' :
+          m.status && m.status.includes('load') ? '日本語データを準備中' : '準備中';
+        onProgress(label, m.progress || 0);
+      },
+    });
+    // 行ごとの文字と文字の高さ（大きい文字ほど重要とみなす）
+    const lines = (r.data.lines || []).map(l => ({
+      text: Units.normalize(l.text).replace(/\s+/g, ' ').trim(),
+      height: l.bbox ? l.bbox.y1 - l.bbox.y0 : 0,
+      conf: l.confidence || 0,
+    })).filter(l => l.text);
+    return { text: r.data.text || '', lines };
+  }
+
+  function toNum(s) { return Number(String(s).replace(/[,，\s]/g, '')); }
+
+  /**
+   * 値札から価格の候補を取り出す
+   * 戻り値: { best, candidates: [{ price, label, height }], name }
+   */
+  function parsePriceTag(lines) {
+    const cands = [];
+    lines.forEach((l, idx) => {
+      const t = l.text;
+      if (/あたり|当り|当たり|100g|100ml|1個当/.test(t)) return;          // 単価表示の行は除外
+      if (/\d{8,}/.test(t.replace(/\s/g, ''))) return;                     // JANなど長い数字
+      const prev = lines[idx - 1] ? lines[idx - 1].text : '';
+      const ctx = t + ' ' + prev;
+      // 213.84円 のような小数（税込の端数）は切り捨てて1つの金額として扱う
+      const re = /(\d{1,3}(?:[,，]\d{3})+|\d{2,6})(\.\d{1,2})?(?!\s*(?:ml|mL|L|g|kg|個|本|枚|袋|%|cm|入|日|月|時|:|\/|\d))/g;
+      let m;
+      while ((m = re.exec(t))) {
+        if (m.index > 0 && /[\d.]/.test(t[m.index - 1])) continue; // 数字の途中から始まる一致は無視
+        const price = Math.floor(toNum(m[1]));
+        if (price < 10 || price > 100000) continue;
+        const before = t.slice(Math.max(0, m.index - 8), m.index);
+        const after = t.slice(m.index + m[0].length, m.index + m[0].length + 4);
+        let kind = '';
+        if (/税込|込み|込/.test(before + after) || (/税込/.test(ctx) && !/本体|税抜/.test(t))) kind = '税込';
+        else if (/本体|税抜|抜/.test(before + after) || /本体|税抜/.test(t)) kind = '本体';
+        const yenMark = /[円¥\\]/.test(after) || /[¥\\]$/.test(before);
+        cands.push({ price, kind, height: l.height, yenMark });
+      }
+    });
+    // 同じ金額はまとめる
+    const uniq = [];
+    cands.forEach(c => {
+      const u = uniq.find(x => x.price === c.price);
+      if (!u) uniq.push({ ...c });
+      else { u.height = Math.max(u.height, c.height); u.kind = u.kind || c.kind; u.yenMark = u.yenMark || c.yenMark; }
+    });
+    // 本体価格×1.08 または ×1.10 に一致する金額があれば、それを税込とみなす
+    uniq.forEach(a => uniq.forEach(b => {
+      if (a === b) return;
+      for (const rate of [1.08, 1.1]) {
+        const taxed = a.price * rate;
+        if (Math.abs(Math.floor(taxed) - b.price) <= 1 || Math.abs(Math.round(taxed) - b.price) <= 1) {
+          if (!a.kind) a.kind = '本体';
+          if (!b.kind) b.kind = '税込';
+          b.note = `本体${a.price}円 ＋ 税${Math.round((rate - 1) * 100)}%`;
+        }
+      }
+    }));
+    const score = c => (c.kind === '税込' ? 1000 : 0) + (c.yenMark ? 100 : 0) + c.height - (c.kind === '本体' ? 50 : 0);
+    uniq.sort((a, b) => score(b) - score(a));
+    const candidates = uniq.slice(0, 6).map(c => ({
+      price: c.price,
+      label: c.kind === '税込' ? `税込 ${c.price}円` : c.kind === '本体' ? `本体(税抜) ${c.price}円` : `${c.price}円`,
+      kind: c.kind, note: c.note || '',
+    }));
+    const best = candidates[0] || null;
+    // 本体価格しか読めなかったときは、税込は計算せず注意を出す
+    const warn = best && best.kind === '本体' ? '税抜価格しか読み取れませんでした。税込価格を確認してください' : '';
+    return { best, candidates, warn, name: guessName(lines, true) };
+  }
+
+  /** 大きめの文字で、ひらがな・カタカナ・漢字・英字を含む行を商品名の候補にする */
+  function guessName(lines, isTag) {
+    const skip = /税込|税抜|本体|価格|円|特価|セール|ポイント|あたり|当り|お一人|限り|期限|産地|国産|JAN|\d{6,}/;
+    const good = lines
+      .filter(l => !(isTag && skip.test(l.text)))
+      .map(l => ({ ...l, letters: l.text.replace(/[^぀-ヿ一-鿿A-Za-z]/g, '') }))
+      .filter(l => l.letters.length >= 2 && l.conf >= 40)
+      .sort((a, b) => b.height - a.height);
+    return good.slice(0, 3).map(l => l.text.replace(/[|｜_~^`]+/g, ' ').replace(/\s+/g, ' ').trim()).filter(Boolean);
+  }
+
+  /** 商品パッケージから検索語と容量を取り出す */
+  function parseProduct(lines) {
+    const all = lines.map(l => l.text).join(' ');
+    const size = Units.parseSize(all);
+    const names = guessName(lines, false);
+    return {
+      names,
+      size: size && !size.countOnly && size.pack === 1 ? size : null,
+    };
+  }
+
+  /** 登録済み商品から候補を探す（商品名・レシート表記・メーカーとの一致） */
+  function localCandidates(words, size, products) {
+    const found = new Map();
+    words.filter(Boolean).forEach(w => {
+      const m = Receipt.bestMatch(w, products);
+      if (m) found.set(m.product.id, Math.max(found.get(m.product.id) || 0, m.score));
+      products.forEach(p => {
+        const n = Units.normalize(`${p.name} ${p.maker}`).toLowerCase();
+        const toks = Units.normalize(w).toLowerCase().split(/\s+/).filter(t => t.length >= 2);
+        const hit = toks.filter(t => n.includes(t)).length;
+        if (toks.length && hit / toks.length >= 0.5) found.set(p.id, Math.max(found.get(p.id) || 0, 0.5 + hit / toks.length * 0.3));
+      });
+    });
+    return [...found.entries()]
+      .map(([id, score]) => {
+        const p = products.find(x => x.id === id);
+        // 容量が読み取れていて一致すれば優先
+        const sizeOk = size && p.size && p.unit === size.unit && Math.abs(p.size - size.size) < 1;
+        return { product: p, score: score + (sizeOk ? 0.3 : 0), sizeOk };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+  }
+
+  return { recognize, parsePriceTag, parseProduct, localCandidates, guessName };
+})();
+
+</script>
+  <script>
+/*
+ * backup.js — JSONファイルへの書き出し（エクスポート）と読み込み（インポート）
+ *
+ * インポートでは既存データを消しません。
+ *   mode 'skip'      … 同じデータが既にあれば、既存を残して取り込まない
+ *   mode 'overwrite' … 同じデータが既にあれば、ファイルの内容で上書き
+ * 「同じデータ」の判定: IDが同じ。商品はJANコードが同じ場合も同じ商品とみなします。
+ */
+const Backup = (() => {
+  const APP = 'kaimono-hikaku';
+  const FORMAT_VERSION = 1;
+
+  async function exportData({ includeImages = true } = {}) {
+    const [products, purchases, marketFetches, receipts, settingsRows] = await Promise.all(
+      ['products', 'purchases', 'marketFetches', 'receipts', 'settings'].map(s => DB.all(s))
+    );
+    const strip = list => includeImages ? list : list.map(x => { const c = { ...x }; delete c.image; return c; });
+    const data = {
+      app: APP,
+      formatVersion: FORMAT_VERSION,
+      exportedAt: new Date().toISOString(),
+      products: strip(products),
+      purchases,
+      marketFetches,
+      receipts: strip(receipts),
+      settings: settingsRows.filter(r => !['lastBackupAt', 'purchasesAtLastBackup'].includes(r.key)),
+    };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const d = new Date();
+    const name = `kaimono-backup-${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}.json`;
+    await DB.setSetting('lastBackupAt', d.toISOString());
+    await DB.setSetting('purchasesAtLastBackup', purchases.length);
+    return { blob, name, counts: { products: products.length, purchases: purchases.length, marketFetches: marketFetches.length } };
+  }
+
+  /** ファイルの内容を確認し、取り込み前の件数・重複件数を返す */
+  async function analyze(text) {
+    let data;
+    try { data = JSON.parse(text); } catch (e) { throw new Error('JSONファイルとして読み込めませんでした'); }
+    if (data.app !== APP) throw new Error('このアプリのバックアップファイルではありません');
+    const existing = {};
+    for (const s of ['products', 'purchases', 'marketFetches', 'receipts']) {
+      existing[s] = new Set((await DB.all(s)).map(x => x.id));
+    }
+    const janMap = new Map((await DB.all('products')).filter(p => p.jan).map(p => [p.jan, p.id]));
+    const report = {};
+    for (const s of ['products', 'purchases', 'marketFetches', 'receipts']) {
+      const list = data[s] || [];
+      const dup = list.filter(x => existing[s].has(x.id) || (s === 'products' && x.jan && janMap.has(x.jan) && janMap.get(x.jan) !== x.id)).length;
+      report[s] = { total: list.length, duplicates: dup, fresh: list.length - dup };
+    }
+    return { data, report };
+  }
+
+  async function importData(data, mode) {
+    const products = await DB.all('products');
+    const janMap = new Map(products.filter(p => p.jan).map(p => [p.jan, p.id]));
+    const idMap = new Map(); // ファイル内の商品ID → このアプリ内の商品ID
+    const result = { added: 0, overwritten: 0, skipped: 0 };
+
+    for (const p of data.products || []) {
+      const sameJanId = p.jan && janMap.get(p.jan);
+      const targetId = sameJanId && sameJanId !== p.id ? sameJanId : p.id;
+      idMap.set(p.id, targetId);
+      const exists = await DB.get('products', targetId);
+      if (exists && mode === 'skip') { result.skipped++; continue; }
+      await DB.put('products', { ...p, id: targetId });
+      exists ? result.overwritten++ : result.added++;
+    }
+    for (const s of ['purchases', 'marketFetches', 'receipts']) {
+      for (const x of data[s] || []) {
+        const rec = { ...x };
+        if (rec.productId && idMap.has(rec.productId)) rec.productId = idMap.get(rec.productId);
+        const exists = await DB.get(s, rec.id);
+        if (exists && mode === 'skip') { result.skipped++; continue; }
+        await DB.put(s, rec);
+        exists ? result.overwritten++ : result.added++;
+      }
+    }
+    if (mode === 'overwrite') {
+      for (const r of data.settings || []) await DB.put('settings', r);
+    }
+    return result;
+  }
+
+  /** バックアップを促すべきか（前回から購入履歴が20件以上増えた、または30日以上経過） */
+  async function shouldRemind() {
+    const s = await DB.getSettings();
+    const count = (await DB.all('purchases')).length;
+    if (count < 10) return null;
+    const added = count - (s.purchasesAtLastBackup || 0);
+    const days = s.lastBackupAt ? (Date.now() - new Date(s.lastBackupAt).getTime()) / 86400000 : Infinity;
+    if (added >= 20 || days >= 30) {
+      return s.lastBackupAt
+        ? `前回のバックアップから購入履歴が${added}件増えています`
+        : `購入履歴が${count}件たまりました。まだバックアップされていません`;
+    }
+    return null;
+  }
+
+  return { exportData, analyze, importData, shouldRemind };
+})();
+
+</script>
+  <script>
+/*
+ * app.js — 画面の表示と操作
+ *
+ * 画面はURLの「#」以降で切り替えます（例: #history/商品ID）。
+ *   #home            ホーム
+ *   #scan            商品スキャン
+ *   #snap            写真で判定（商品と値札が一緒に写った写真1枚）
+ *   #photo           写真で調べる（商品本体・値札の写真）
+ *   #compare         価格を比較（商品を選ぶ・容量違いの単価比較）
+ *   #judge/ID        価格判定（市場価格・購入履歴）
+ *   #receipt         レシート読み取り
+ *   #history         購入履歴（商品一覧）
+ *   #item/ID         商品別の購入履歴
+ *   #product/new     商品を登録   #product/ID 商品を編集
+ *   #purchase/new    購入を記録   #purchase/ID 購入を編集
+ *   #settings        設定・バックアップ
+ */
+(() => {
+  let view = document.getElementById('view');
+  /** 前の画面のイベントを外すため、表示領域を作り直す */
+  function resetView() { const fresh = view.cloneNode(false); view.replaceWith(fresh); view = fresh; }
+  const titleEl = document.getElementById('title');
+  const backBtn = document.getElementById('backBtn');
+
+  // ========== 共通の小さな道具 ==========
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const $ = sel => view.querySelector(sel);
+  const $$ = sel => Array.from(view.querySelectorAll(sel));
+  const yen = Units.yen;
+  const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+  const fmtDateTime = iso => { if (!iso) return '—'; const d = new Date(iso); return `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`; };
+  const fmtDate = s => s ? s.replace(/-/g, '/') : '—';
+  const pct = n => (n > 0 ? '+' : '') + (Math.round(n * 10) / 10) + '%';
+  const signYen = n => (n > 0 ? '+' : n < 0 ? '−' : '±') + yen(Math.abs(n));
+  const go = hash => { location.hash = hash; };
+
+  function toast(msg, ms = 2200) {
+    const t = document.createElement('div');
+    t.className = 'toast'; t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), ms);
+  }
+  function setTitle(text, showBack = true) {
+    titleEl.textContent = text;
+    backBtn.classList.toggle('hidden', !showBack);
+  }
+  backBtn.addEventListener('click', () => { if (history.length > 1) history.back(); else go('#home'); });
+
+  function statusBadge(s) { return `<span class="badge ${esc(s)}">${esc(s)}</span>`; }
+  function sampleBadge(x) { return x && x.sample ? ' <span class="badge sample">サンプル</span>' : ''; }
+  function thumb(p) { return p.image ? `<img class="thumb" src="${p.image}" alt="">` : `<span class="thumb">🛒</span>`; }
+  function productLine(p) {
+    return `${esc(p.maker ? p.maker + ' ' : '')}${esc(Units.sizeLabel(p.size, p.unit))}${p.jan ? ' ・JAN ' + esc(p.jan) : ''}`;
+  }
+
+  /** 画像を縮小して保存用の文字列（dataURL）にする */
+  function resizeImage(file, max = 480) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        const s = Math.min(1, max / Math.max(img.width, img.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(img.src);
+        resolve(c.toDataURL('image/jpeg', 0.75));
+      };
+      img.onerror = () => reject(new Error('画像を読み込めませんでした'));
+      img.src = URL.createObjectURL(file);
+    });
+  }
+
+  async function storeNames() {
+    const list = await DB.all('purchases');
+    const count = {};
+    list.forEach(p => { if (p.store) count[p.store] = (count[p.store] || 0) + 1; });
+    return Object.keys(count).sort((a, b) => count[b] - count[a]);
+  }
+
+  // ========== ホーム ==========
+  async function viewHome() {
+    setTitle('買い物価格チェッカー', false);
+    const [settings, products, remind] = await Promise.all([DB.getSettings(), DB.all('products'), Backup.shouldRemind()]);
+    const pending = products.filter(p => p.status !== '確定').length;
+    view.innerHTML = `
+      ${!settings.workerUrl ? `<div class="notice">市場価格の自動取得には、価格取得サーバーの設定が必要です。<a href="#settings">設定画面へ</a></div>` : ''}
+      ${remind ? `<div class="notice">💾 ${esc(remind)}。<a href="#settings">バックアップする</a></div>` : ''}
+      <div class="home-grid">
+        <a class="big" href="#snap"><span class="ic">📸</span>写真で判定<span style="font-size:13px;font-weight:400">商品と値札を一緒に撮るだけ</span></a>
+        <a href="#scan"><span class="ic">📷</span>バーコードで判定</a>
+        <a href="#compare"><span class="ic">⚖️</span>価格を比較</a>
+        <a href="#receipt"><span class="ic">🧾</span>レシートを読み取る</a>
+        <a href="#history"><span class="ic">📈</span>購入履歴を見る</a>
+        <a href="#product/new"><span class="ic">➕</span>商品を登録する</a>
+      </div>
+      ${pending ? `<div class="card" style="margin-top:14px"><a href="#history?filter=pending">確定していない商品が ${pending} 件あります（JANや容量を補完できます）</a></div>` : ''}
+      <p class="small center" style="margin-top:18px">データはこのiPhoneのブラウザ内に保存されています</p>`;
+  }
+
+  // ========== 商品スキャン ==========
+  async function viewScan() {
+    setTitle('商品をスキャン');
+    view.innerHTML = `
+      <div class="card">
+        <div id="reader"></div>
+        <p class="small center" id="scanMsg">バーコードを枠の中に写してください</p>
+        <button class="btn secondary" id="startBtn" type="button">📷 カメラを起動</button>
+        <label class="btn ghost">🖼 バーコードの写真から読み取る<input id="barPhoto" type="file" accept="image/*" class="hidden"></label>
+        <p class="small center">カメラがうまく動かないときは、バーコードを撮影した写真を選んでください</p>
+      </div>
+      <div class="card">
+        <label class="f" for="janIn">JANコードを入力して検索</label>
+        <div class="row">
+          <input id="janIn" inputmode="numeric" pattern="[0-9]*" maxlength="13" placeholder="4901234567890">
+          <button class="btn small btn-inline" id="janBtn" type="button" style="flex:0 0 auto">検索</button>
+        </div>
+        <a class="btn ghost" href="#photo">🖼 商品と値札の写真で調べる</a>
+        <a class="btn ghost" href="#compare">JANが無い商品は名前で探す</a>
+      </div>`;
+    const msg = $('#scanMsg');
+    const start = async () => {
+      msg.textContent = 'カメラを起動しています…';
+      try {
+        await Scanner.start('reader', onCode);
+        msg.textContent = 'バーコードを枠の中に写してください';
+        $('#startBtn').classList.add('hidden');
+      } catch (e) {
+        msg.textContent = e.message || 'カメラを起動できませんでした（カメラの使用を許可してください）';
+        $('#startBtn').classList.remove('hidden');
+      }
+    };
+    $('#startBtn').addEventListener('click', start);
+    $('#barPhoto').addEventListener('change', async e => {
+      const f = e.target.files[0]; if (!f) return;
+      msg.textContent = '写真を読み取っています…';
+      try { await Scanner.stop(); onCode(await Scanner.scanFile(f)); }
+      catch (err) { msg.textContent = err.message; }
+      e.target.value = '';
+    });
+    $('#janBtn').addEventListener('click', () => {
+      const code = $('#janIn').value.replace(/\D/g, '');
+      if (!Units.isValidJan(code)) { toast('JANコードが正しくありません（8桁または13桁）'); return; }
+      onCode(code);
+    });
+    start();
+  }
+
+  async function onCode(jan) {
+    const p = await DB.findProductByJan(jan);
+    if (p) go(`#judge/${p.id}`);
+    else go(`#product/new?jan=${jan}&next=judge`);
+  }
+
+  // ========== 写真で判定（商品と値札が一緒に写った写真1枚） ==========
+  let snapInfo = null; // 直前の読み取り結果（判定画面でのお知らせ用）
+
+  async function viewSnap() {
+    setTitle('写真で判定');
+    view.innerHTML = `
+      <div class="card center">
+        <p style="margin-top:0">商品と<strong>値札（棚札）</strong>が一緒に写るように撮影してください</p>
+        <label class="btn" style="min-height:72px;font-size:20px">📸 撮影する<input id="snapCam" type="file" accept="image/*" capture="environment" class="hidden"></label>
+        <label class="btn secondary">🖼 写真を選ぶ<input id="snapPick" type="file" accept="image/*" class="hidden"></label>
+        <p class="small">値札の数字（価格・JANコード）がはっきり写っていると正確になります</p>
+      </div>
+      <div id="snapBox"></div>`;
+    const run = async file => {
+      if (!file) return;
+      const box = $('#snapBox');
+      const thumb = await resizeImage(file, 300);
+      box.innerHTML = `<div class="card center"><img src="${thumb}" style="max-width:160px;border-radius:10px"><p><span class="spinner"></span> 写真を読み取っています…</p></div>`;
+      try {
+        const big = await resizeImage(file, 1600);
+        const r = await Market.analyzePhoto(big);
+        box.querySelector('p').innerHTML = '<span class="spinner"></span> 商品を確認しています…';
+        const { product, price, note } = await resolveSnap(r, thumb);
+        snapInfo = { note };
+        if (!product) throw new Error('商品を読み取れませんでした。商品名が写るように撮り直してください');
+        go(`#judge/${product.id}?from=photo${price ? '&price=' + price : ''}`);
+      } catch (e) {
+        box.innerHTML = `<div class="notice error">${esc(e.message)}${e.code === 'NO_WORKER' ? ' <a href="#settings">設定へ</a>' : ''}</div>
+          <a class="btn ghost" href="#photo">AIを使わずに読み取る（精度は低め）</a>`;
+      }
+    };
+    $('#snapCam').addEventListener('change', e => run(e.target.files[0]));
+    $('#snapPick').addEventListener('change', e => run(e.target.files[0]));
+  }
+
+  /** 読み取り結果から、登録済みの商品を探す（なければ登録）。価格は税込を使う */
+  async function resolveSnap(r, thumb) {
+    const notes = [];
+    let jan = String(r.jan || '').replace(/\D/g, '');
+    if (jan && !Units.isValidJan(jan)) { jan = ''; notes.push('JANコードは読み取れませんでした'); }
+    const b = r.size ? Units.toBase(Number(r.size), r.unit) : null;
+    let price = Number(r.priceTaxIncluded) || null;
+    const ex = Number(r.priceTaxExcluded) || null;
+    if (!price && ex) {
+      const rate = Number(r.taxRate) === 10 ? 10 : Number(r.taxRate) === 8 ? 8 : null;
+      if (rate) { price = Math.floor(ex * (1 + rate / 100)); notes.push(`税込価格は本体${ex}円＋税${rate}%で計算`); }
+      else notes.push(`本体価格${ex}円しか読み取れませんでした。税込価格を入力してください`);
+    }
+    if (price && ex && !(price >= ex && price <= ex * 1.11)) notes.push('価格の読み取りに不安があります。値札を確認してください');
+    if (!price) notes.push('価格を読み取れませんでした');
+    if (r.note) notes.push(r.note);
+
+    let product = jan ? await DB.findProductByJan(jan) : null;
+    if (!product && !jan && r.productName) {
+      const products = await DB.all('products');
+      const c = Photo.localCandidates([r.productName], b, products)[0];
+      if (c && c.score >= 0.8 && (c.sizeOk || !b)) product = c.product;
+    }
+    if (!product && (r.productName || jan)) {
+      product = await DB.saveProduct({
+        jan, name: (r.productName || '').trim(), maker: (r.maker || '').trim(), category: '',
+        size: b ? b.size : null, unit: b ? b.unit : null, image: thumb,
+      });
+      notes.unshift('新しい商品として登録しました');
+    }
+    return { product, price, note: notes.join('／') };
+  }
+
+  // ========== 写真で調べる（商品本体・値札） ==========
+  let photoDraft = null;   // 読み取り結果（画面を離れても保持）
+  let pendingImage = null; // 新しく登録する商品に使う写真
+
+  async function viewPhoto() {
+    setTitle('写真で調べる');
+    const d = photoDraft || (photoDraft = { product: null, tag: null, result: null });
+    const settings = await DB.getSettings();
+    const slot = (key, label, hint) => `
+      <div class="card">
+        <h2>${label}</h2>
+        <div class="row" style="align-items:flex-start">
+          <div style="flex:0 0 84px">${d[key] ? `<img src="${d[key].thumb}" style="width:84px;height:84px;object-fit:cover;border-radius:10px">` : '<div class="thumb" style="width:84px;height:84px;font-size:30px">' + (key === 'product' ? '🛒' : '🏷') + '</div>'}</div>
+          <div>
+            <label class="btn small" style="margin-top:0">📷 撮影<input type="file" accept="image/*" capture="environment" class="hidden" data-slot="${key}"></label>
+            <label class="btn small secondary">🖼 写真を選ぶ<input type="file" accept="image/*" class="hidden" data-slot="${key}"></label>
+          </div>
+        </div>
+        <p class="small">${hint}</p>
+      </div>`;
+    view.innerHTML = `
+      ${slot('product', '① 商品本体の写真', '商品名と容量（500mlなど）が書いてある面を、文字が大きく写るように撮影してください')}
+      ${slot('tag', '② 値札の写真', '価格の部分が画面いっぱいになるように撮影してください')}
+      <button class="btn" id="readBtn" type="button" ${d.product || d.tag ? '' : 'disabled'}>読み取る</button>
+      <p class="small center">どちらか片方だけでも読み取れます。読み取りはこのiPhoneの中で行い、写真は送信しません。</p>
+      <div class="card hidden" id="ocrBox"><p id="ocrMsg">準備中…</p><div class="progress"><div id="ocrBar"></div></div></div>
+      <div id="photoResult"></div>`;
+
+    $$('input[data-slot]').forEach(inp => inp.addEventListener('change', async e => {
+      const f = e.target.files[0]; if (!f) return;
+      d[inp.dataset.slot] = { file: f, thumb: await resizeImage(f, 300) };
+      d.result = null;
+      viewPhoto();
+    }));
+
+    $('#readBtn').addEventListener('click', async () => {
+      $('#readBtn').disabled = true;
+      $('#ocrBox').classList.remove('hidden');
+      const progress = prefix => (label, p) => {
+        $('#ocrMsg').textContent = `${prefix}：${label}… ${Math.round(p * 100)}%`;
+        $('#ocrBar').style.width = `${Math.round(p * 100)}%`;
+      };
+      const r = { price: null, prodText: null, error: '' };
+      try {
+        if (d.tag) r.price = Photo.parsePriceTag((await Photo.recognize(d.tag.file, progress('値札'))).lines);
+        if (d.product) r.prodText = Photo.parseProduct((await Photo.recognize(d.product.file, progress('商品'))).lines);
+      } catch (e) {
+        r.error = e.message;
+      }
+      const names = [...(r.prodText ? r.prodText.names : []), ...(r.price ? r.price.name : [])];
+      const size = r.prodText && r.prodText.size;
+      r.query = [names[0] || '', size ? Units.sizeLabel(size.size, size.unit) : ''].filter(Boolean).join(' ');
+      r.names = names; r.size = size;
+      r.selectedPrice = r.price && r.price.best ? r.price.best.price : '';
+      d.result = r;
+      await searchPhotoCandidates();
+      viewPhoto();
+    });
+
+    if (d.result) await renderPhotoResult(settings);
+  }
+
+  async function searchPhotoCandidates() {
+    const r = photoDraft.result;
+    const products = await DB.all('products');
+    r.local = Photo.localCandidates([r.query, ...r.names], r.size, products);
+    r.online = []; r.onlineError = '';
+    const settings = await DB.getSettings();
+    if (!r.query) return;
+    if (!settings.workerUrl) { r.onlineError = '価格取得サーバーが未設定のため、通販サイトの候補は探せません'; return; }
+    try { r.online = await Market.searchCandidates(r.query); }
+    catch (e) { r.onlineError = e.message; }
+  }
+
+  async function renderPhotoResult() {
+    const d = photoDraft, r = d.result;
+    const box = $('#photoResult');
+    const priceQ = () => { const v = Number($('#phPrice').value); return v > 0 ? `?price=${v}` : ''; };
+    box.innerHTML = `
+      ${r.error ? `<div class="notice error">読み取りに失敗しました: ${esc(r.error)}</div>` : ''}
+      <div class="card">
+        <h2>🏷 店頭価格</h2>
+        ${d.tag ? (r.price && r.price.candidates.length ? `
+          <p class="small">読み取った金額（押すと選べます）</p>
+          <div>${r.price.candidates.map(c => `<button type="button" class="btn small ${c.price === r.selectedPrice ? '' : 'ghost'} btn-inline pc" data-p="${c.price}" style="margin-right:6px">${esc(c.label)}</button>`).join('')}</div>
+          ${r.price.best && r.price.best.note ? `<p class="small">${esc(r.price.best.note)}として判定</p>` : ''}
+          ${r.price.warn ? `<p class="small" style="color:var(--expensive)">${esc(r.price.warn)}</p>` : ''}`
+          : '<p class="sub">値札から金額を読み取れませんでした。下に入力してください。</p>') : '<p class="sub">値札の写真がないため、金額を入力してください。</p>'}
+        <div class="price-wrap" style="margin-top:8px"><input id="phPrice" class="price-input" inputmode="numeric" value="${esc(r.selectedPrice)}" placeholder="0"></div>
+        <p class="small">読み取り間違いがあれば直してください</p>
+      </div>
+      <div class="card">
+        <h2>🛒 商品の候補</h2>
+        <label class="f" for="phQuery">検索した言葉（直して再検索できます）</label>
+        <div class="row"><input id="phQuery" value="${esc(r.query)}" placeholder="例: おーいお茶 500ml">
+          <button class="btn small secondary btn-inline" id="phSearch" type="button" style="flex:0 0 auto">再検索</button></div>
+        ${r.names.length ? `<p class="small">写真から読み取った文字: ${r.names.map(esc).join(' ／ ')}${r.size ? '・容量 ' + esc(Units.sizeLabel(r.size.size, r.size.unit)) : ''}</p>` : (d.product ? '<p class="small">商品名を読み取れませんでした。検索語を入力してください。</p>' : '')}
+        <h3>登録済みの商品</h3>
+        <ul class="list">${(r.local || []).map(c => `<li><a class="item cand-local" href="#" data-id="${c.product.id}">${thumb(c.product)}<div class="grow">
+          <div class="name">${esc(c.product.name)} ${statusBadge(c.product.status)}</div><div class="small">${productLine(c.product)}${c.sizeOk ? '・容量一致' : ''}</div></div>›</a></li>`).join('') || '<li class="small">見つかりませんでした</li>'}</ul>
+        <h3>通販サイトの商品（JANコード付き）</h3>
+        ${r.onlineError ? `<p class="small">${esc(r.onlineError)}</p>` : ''}
+        <ul class="list">${(r.online || []).map((c, i) => `<li><a class="item cand-online" href="#" data-i="${i}"><div class="grow">
+          <div class="name">${esc(c.name)}</div><div class="small">${esc(c.maker)} ${esc(Units.sizeLabel(c.size, c.unit))}・JAN ${esc(c.jan)}</div></div>›</a></li>`).join('') || (!r.onlineError ? '<li class="small">見つかりませんでした</li>' : '')}</ul>
+        <p class="small">※ 写真の文字から探しているため、違う商品や違う容量が混ざることがあります。目の前の商品と同じものを選んでください。</p>
+        <button class="btn ghost" id="phNew" type="button">候補にない → 新しい商品として登録</button>
+      </div>
+      <button class="btn ghost" id="phReset" type="button">写真を撮り直す</button>`;
+
+    $$('.pc').forEach(b => b.addEventListener('click', () => {
+      r.selectedPrice = Number(b.dataset.p); $('#phPrice').value = r.selectedPrice;
+      $$('.pc').forEach(x => x.classList.toggle('ghost', x !== b));
+    }));
+    $('#phPrice').addEventListener('input', () => { r.selectedPrice = $('#phPrice').value; });
+    $('#phSearch').addEventListener('click', async () => {
+      r.query = $('#phQuery').value.trim();
+      $('#phSearch').disabled = true;
+      await searchPhotoCandidates();
+      renderPhotoResult();
+    });
+    $$('.cand-local').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      go(`#judge/${a.dataset.id}${priceQ()}`);
+    }));
+    $$('.cand-online').forEach(a => a.addEventListener('click', async e => {
+      e.preventDefault();
+      const c = r.online[Number(a.dataset.i)];
+      const exists = await DB.findProductByJan(c.jan);
+      if (exists) { go(`#judge/${exists.id}${priceQ()}`); return; }
+      pendingImage = d.product ? d.product.thumb : null;
+      const qs = new URLSearchParams({ jan: c.jan, name: c.name, maker: c.maker, next: 'judge' });
+      if (c.size) { qs.set('size', c.size); qs.set('unit', c.unit); }
+      const pr = Number($('#phPrice').value); if (pr > 0) qs.set('price', pr);
+      go(`#product/new?${qs}`);
+    }));
+    $('#phNew').addEventListener('click', () => {
+      pendingImage = d.product ? d.product.thumb : null;
+      const qs = new URLSearchParams({ name: $('#phQuery').value.replace(/\s*\d+(\.\d+)?\s*(ml|L|g|kg)$/i, '').trim(), next: 'judge' });
+      if (r.size) { qs.set('size', r.size.size); qs.set('unit', r.size.unit); }
+      const pr = Number($('#phPrice').value); if (pr > 0) qs.set('price', pr);
+      go(`#product/new?${qs}`);
+    });
+    $('#phReset').addEventListener('click', () => { photoDraft = null; viewPhoto(); });
+  }
+
+  // ========== 価格を比較（商品選択・単価比較） ==========
+  async function viewCompare() {
+    setTitle('価格を比較');
+    const products = (await DB.all('products')).sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ja'));
+    view.innerHTML = `
+      <div class="card">
+        <h2>商品を選んで判定</h2>
+        <input id="q" type="search" placeholder="商品名・メーカー・JANで検索">
+        <ul class="list" id="plist"></ul>
+        <a class="btn ghost" href="#product/new?next=judge">＋ 新しい商品を登録して判定</a>
+      </div>
+      <div class="card">
+        <h2>容量違いの単価比較</h2>
+        <p class="small">例: 500ml 398円 と 1,000ml 698円 はどちらが得か</p>
+        ${['A', 'B'].map(k => `
+          <div class="row" style="margin-top:8px">
+            <strong style="flex:0 0 22px">${k}</strong>
+            <input id="p${k}" inputmode="decimal" placeholder="価格">
+            <input id="s${k}" inputmode="decimal" placeholder="容量">
+            <select id="u${k}" style="flex:0 0 78px">${['ml', 'L', 'g', 'kg', '個'].map(u => `<option>${u}</option>`).join('')}</select>
+          </div>`).join('')}
+        <div id="calcOut" class="sub" style="margin-top:10px"></div>
+      </div>`;
+    const render = () => {
+      const q = Units.normalize($('#q').value).toLowerCase();
+      const list = products.filter(p => !q || Units.normalize(`${p.name} ${p.maker} ${p.jan}`).toLowerCase().includes(q)).slice(0, 50);
+      $('#plist').innerHTML = list.length ? list.map(p => `
+        <li><a class="item" href="#judge/${p.id}">${thumb(p)}<div class="grow"><div class="name">${esc(p.name || '（名前なし）')} ${statusBadge(p.status)}${sampleBadge(p)}</div><div class="small">${productLine(p)}</div></div>›</a></li>`).join('')
+        : '<li class="sub">登録された商品がありません</li>';
+    };
+    $('#q').addEventListener('input', render);
+    render();
+    const calc = () => {
+      const r = ['A', 'B'].map(k => {
+        const b = Units.toBase(Number($(`#s${k}`).value), $(`#u${k}`).value);
+        const pr = Number($(`#p${k}`).value);
+        return b && pr > 0 ? { k, unit: b.unit, up: Units.unitPrice(pr, b.size, b.unit) } : null;
+      });
+      const out = $('#calcOut');
+      if (!r[0] || !r[1]) { out.textContent = '価格と容量を入力してください'; return; }
+      if (r[0].unit !== r[1].unit) { out.textContent = '単位の種類（ml・g・個）が異なるため比較できません'; return; }
+      const lab = Units.baseLabel(r[0].unit);
+      const cheaper = r[0].up < r[1].up ? 'A' : r[0].up > r[1].up ? 'B' : null;
+      out.innerHTML = `A: ${lab} <strong>${yen(r[0].up)}</strong> ／ B: ${lab} <strong>${yen(r[1].up)}</strong><br>` +
+        (cheaper ? `<strong class="minus">${cheaper}の方が${pct(Math.abs(r[0].up - r[1].up) / Math.max(r[0].up, r[1].up) * 100).replace('+', '')}安い</strong>` : '同じ単価です');
+    };
+    $$('#view input[id^=p], #view input[id^=s], #view select').forEach(el => el.addEventListener('input', calc));
+  }
+
+  // ========== 価格判定 ==========
+  const MARKET_REFRESH_HOURS = 6;
+  let judgePrice = {}; // 商品ごとに直前に入力した店頭価格を覚えておく
+
+  async function viewJudge(id, q) {
+    const product = await DB.get('products', id);
+    if (!product) { view.innerHTML = '<div class="notice error">商品が見つかりません</div>'; return; }
+    setTitle('価格判定');
+    const settings = await DB.getSettings();
+    let purchases = await DB.purchasesOf(id);
+    let marketRecord = await Market.latestFor(id);
+    const initPrice = q.price || judgePrice[id] || '';
+    const hasSize = product.size > 0 && product.unit;
+
+    view.innerHTML = `
+      <div class="card">
+        <div class="list"><a class="item" href="#item/${id}">${thumb(product)}<div class="grow">
+          <div class="name">${esc(product.name || '（名前なし）')} ${statusBadge(product.status)}${sampleBadge(product)}</div>
+          <div class="small">${productLine(product)}</div></div>›</a></div>
+        ${!hasSize ? `<div class="notice" style="margin:10px 0 0">内容量が未登録のため、1つあたりの価格で比較します。<a href="#product/${id}">内容量を登録</a></div>` : ''}
+        ${q.from === 'photo' && snapInfo ? `<div class="notice info" style="margin:10px 0 0">📸 写真から読み取りました${snapInfo.note ? '：' + esc(snapInfo.note) : ''}。商品や価格が違う場合は直してください。</div>` : ''}
+        <label class="f" for="price">店頭価格（1つあたり・税込）</label>
+        <div class="price-wrap"><input id="price" class="price-input" inputmode="numeric" pattern="[0-9]*" value="${esc(initPrice)}" placeholder="0"></div>
+        <div class="row" style="margin-top:8px">
+          <select id="kind"><option>通常</option><option>セール</option><option>クーポン利用</option></select>
+        </div>
+        <p class="small">ポイント還元は価格に含めずに判定します</p>
+        <div id="unitInfo" class="sub"></div>
+      </div>
+
+      <div class="card" id="marketCard">
+        <div class="row"><h2 class="grow" style="margin:0">🌐 市場価格との比較</h2>
+          <button class="btn small ghost btn-inline" id="refetch" type="button" style="flex:0 0 auto">再取得</button></div>
+        <div id="marketBox"></div>
+      </div>
+
+      <div class="card" id="histCard">
+        <h2>🧾 自分の購入履歴との比較</h2>
+        <div id="histBox"></div>
+      </div>
+
+      <div class="card">
+        <h2>この価格で購入した</h2>
+        <div class="row">
+          <div><label class="f" for="buyQty">数量</label><input id="buyQty" inputmode="numeric" value="1"></div>
+          <div><label class="f" for="buyDate">購入日</label><input id="buyDate" type="date" value="${today()}"></div>
+        </div>
+        <label class="f" for="buyStore">店舗</label>
+        <input id="buyStore" list="storeList" placeholder="例: ○○スーパー 駅前店">
+        <datalist id="storeList">${(await storeNames()).map(s => `<option value="${esc(s)}">`).join('')}</datalist>
+        <button class="btn" id="buyBtn" type="button">購入履歴に記録</button>
+      </div>`;
+    const lastStore = (await storeNames())[0];
+    if (lastStore) $('#buyStore').value = lastStore;
+
+    const current = () => {
+      const price = Number($('#price').value.replace(/[^\d.]/g, ''));
+      return price > 0 ? price : null;
+    };
+
+    const renderUnit = () => {
+      const p = current();
+      $('#unitInfo').innerHTML = p && hasSize ? `${Units.baseLabel(product.unit)} <strong>${yen(Units.unitPrice(p, product.size, product.unit))}</strong>` : '';
+    };
+
+    const renderHistory = () => {
+      const p = current();
+      const box = $('#histBox');
+      if (!purchases.length) { box.innerHTML = `<div class="verdict unknown"><div class="lv">判定不能</div><div class="hl">この商品の購入履歴がまだありません</div></div>`; return; }
+      if (!p) {
+        const s = Judge.stats(purchases.map(x => x.unitPrice));
+        box.innerHTML = `<p class="sub">店頭価格を入力すると判定します</p>
+          <table class="kv"><tr><td>過去最安値</td><td>${yen(s.min)}</td></tr><tr><td>過去平均</td><td>${yen(s.mean)}</td></tr>
+          <tr><td>直近</td><td>${yen(purchases[purchases.length - 1].unitPrice)}</td></tr><tr><td>購入回数</td><td>${s.count}回</td></tr></table>`;
+        return;
+      }
+      const r = Judge.history({ price: p, size: product.size, unit: product.unit }, product, purchases);
+      if (r.level === 'unknown') { box.innerHTML = `<div class="verdict unknown"><div class="lv">判定不能</div><div class="hl">${esc(r.message)}</div></div>`; return; }
+      const lab = r.sizeKnown ? `（${Units.baseLabel(product.unit)}）` : '';
+      const last = purchases[purchases.length - 1];
+      box.innerHTML = `
+        <div class="verdict ${r.level}"><div class="lv">${r.label}</div><div class="hl">${esc(r.headline)}</div></div>
+        <table class="kv">
+          <tr><td>今回の価格</td><td>${yen(p)}</td></tr>
+          <tr><td>過去最安値</td><td>${yen(r.minPrice)}</td></tr>
+          <tr><td>過去平均</td><td>${yen(r.meanPrice)}</td></tr>
+          <tr><td>直近（${fmtDate(last.date)}）</td><td>${yen(r.latestPrice)}</td></tr>
+          <tr><td>平均との差</td><td class="${p - r.meanPrice > 0 ? 'plus' : 'minus'}">${signYen(p - r.meanPrice)}（${pct(r.diffAvgPct)}）</td></tr>
+          <tr><td>直近との差</td><td class="${p - r.latestPrice > 0 ? 'plus' : 'minus'}">${signYen(p - r.latestPrice)}（${pct(r.diffLatestPct)}）</td></tr>
+          ${r.sizeKnown ? `<tr><td>単価${lab} 今回／平均</td><td>${yen(r.cur)}／${yen(r.s.mean)}</td></tr>` : ''}
+          <tr><td>購入回数</td><td>${r.s.count}回</td></tr>
+        </table>
+        ${r.notes.map(n => `<p class="small">※ ${esc(n)}</p>`).join('')}`;
+    };
+
+    const renderMarket = () => {
+      const box = $('#marketBox');
+      const rec = marketRecord;
+      if (!rec) { box.innerHTML = `<p class="sub"><span class="spinner"></span> 市場価格を検索しています…</p>`; return; }
+      const sourcesLine = (rec.sources || []).map(s => `${esc(s.name)}: ${s.ok ? s.count + '件' : 'エラー（' + esc(s.error) + '）'}`).join(' ／ ');
+      if (!rec.ok) {
+        box.innerHTML = `<div class="verdict unknown"><div class="lv">判定不能</div><div class="hl">市場価格を取得できませんでした</div></div>
+          <p class="small">理由: ${esc(rec.error)}${rec.errorCode === 'NO_WORKER' ? '　<a href="#settings">設定へ</a>' : ''}</p>
+          <p class="small">検索日時: ${fmtDateTime(rec.fetchedAt)}${sourcesLine ? '<br>' + sourcesLine : ''}</p>
+          ${excludedHtml(rec)}`;
+        return;
+      }
+      const acc = rec.offers.filter(o => o.accepted).sort((a, b) => a.unitPrice - b.unitPrice);
+      const p = current();
+      const cur = hasSize ? { price: p, size: product.size, unit: product.unit } : { price: p, size: 1, unit: '個' };
+      const lab = hasSize ? Units.baseLabel(product.unit) : '1つあたり';
+      const r = p ? Judge.market(cur, acc, settings) : null;
+      const sAll = Judge.stats(acc.map(o => o.unitPrice));
+      const sFree = Judge.stats(acc.filter(o => o.shipping === '送料無料' || o.shipping === '送料込').map(o => o.unitPrice));
+      const sPaid = Judge.stats(acc.filter(o => !(o.shipping === '送料無料' || o.shipping === '送料込')).map(o => o.unitPrice));
+      const statRow = (name, s) => s ? `<tr><td>${name}（${s.count}件）</td><td>最安 ${yen(s.min)}／中央 ${yen(s.median)}／平均 ${yen(s.mean)}</td></tr>` : '';
+      box.innerHTML = `
+        ${r ? `<div class="verdict ${r.level}"><div class="lv">${r.label}</div>
+          <div class="hl">${esc(r.basisName)}より ${pct(r.diffPct)}</div></div>` : '<p class="sub">店頭価格を入力すると判定します</p>'}
+        <table class="kv">
+          ${r ? `<tr><td>店頭（${lab}）</td><td>${yen(r.curUnit)}</td></tr><tr><td>基準: ${esc(r.basisName)}</td><td>${yen(r.basis)}</td></tr>` : ''}
+          ${statRow('全体', sAll)}
+          ${statRow('送料無料・送料込', sFree)}
+          ${statRow('送料別（送料は含まず）', sPaid)}
+        </table>
+        ${r ? r.notes.map(n => `<p class="small">※ ${esc(n)}</p>`).join('') : ''}
+        <p class="small">取得日時: ${fmtDateTime(rec.fetchedAt)}<br>参照元: ${sourcesLine}<br>※ 価格は${lab}に換算。通販価格は在庫・時期により変動します</p>
+        <details><summary>参照した販売価格 ${acc.length}件を見る</summary>
+          <ul class="list">${acc.map(o => `<li class="offer">
+            <div><span class="p">${yen(o.price)}</span>${o.pack > 1 ? `（1個 ${yen(o.perItem)}）` : ''}　${esc(o.shipping)}　${lab} ${yen(o.unitPrice)}</div>
+            <div>${esc(o.shop)}（${esc(o.source)}）・${esc(o.matchType)}${o.note ? '・' + esc(o.note) : ''}</div>
+            <div class="small">${esc(o.name)}</div>
+            ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">販売ページを開く</a>` : ''}
+          </li>`).join('')}</ul>
+        </details>
+        ${excludedHtml(rec)}`;
+    };
+
+    function excludedHtml(rec) {
+      const ex = (rec.offers || []).filter(o => !o.accepted);
+      if (!ex.length) return '';
+      return `<details><summary>同一商品と判断しなかった ${ex.length}件</summary><ul class="list">${ex.map(o => `<li class="offer small">
+        ${yen(o.price)}・${esc(o.shop)}（${esc(o.source)}）<br><strong>除外理由: ${esc(o.reason)}</strong><br>${esc(o.name)}</li>`).join('')}</ul></details>`;
+    }
+
+    const doFetch = async () => {
+      marketRecord = null; renderMarket();
+      $('#refetch').disabled = true;
+      marketRecord = await Market.fetchFor(product);
+      $('#refetch').disabled = false;
+      renderMarket();
+    };
+
+    const renderAll = () => { renderUnit(); renderHistory(); renderMarket(); };
+    $('#price').addEventListener('input', () => { judgePrice[id] = $('#price').value; renderAll(); });
+    $('#refetch').addEventListener('click', doFetch);
+    $('#buyBtn').addEventListener('click', async () => {
+      const p = current();
+      if (!p) { toast('店頭価格を入力してください'); return; }
+      const qty = Math.max(1, Number($('#buyQty').value) || 1);
+      await DB.put('purchases', {
+        id: DB.newId('u'), productId: id, date: $('#buyDate').value || today(),
+        unitPrice: p, quantity: qty, totalPrice: p * qty, discount: 0,
+        priceKind: $('#kind').value, store: $('#buyStore').value.trim(), source: 'スキャン',
+        status: product.status, size: product.size || null, unit: product.unit || null, createdAt: new Date().toISOString(),
+      });
+      toast('購入履歴に記録しました');
+      purchases = await DB.purchasesOf(id);
+      renderHistory();
+    });
+
+    renderAll();
+    if (!initPrice) setTimeout(() => $('#price') && $('#price').focus(), 200);
+    const age = marketRecord ? (Date.now() - new Date(marketRecord.fetchedAt).getTime()) / 3600000 : Infinity;
+    if (!marketRecord || !marketRecord.ok || age > MARKET_REFRESH_HOURS) doFetch();
+  }
+
+  // ========== 商品の登録・編集 ==========
+  async function viewProduct(id, q) {
+    const isNew = id === 'new';
+    const p = isNew ? { jan: q.jan || '', name: q.name || '', maker: q.maker || '', category: '', size: q.size || '', unit: q.unit || 'ml' } : await DB.get('products', id);
+    if (!p) { view.innerHTML = '<div class="notice error">商品が見つかりません</div>'; return; }
+    setTitle(isNew ? '商品を登録' : '商品を編集');
+    const settings = await DB.getSettings();
+    const categories = [...new Set((await DB.all('products')).map(x => x.category).filter(Boolean))];
+    let image = p.image || (isNew ? pendingImage : null) || null;
+    pendingImage = null;
+
+    view.innerHTML = `
+      ${isNew && q.jan ? `<div class="notice info">未登録の商品です（JAN ${esc(q.jan)}）。商品情報を確認して登録してください。</div>` : ''}
+      <div id="lookupMsg"></div>
+      <div class="card">
+        <label class="f" for="jan">JANコード</label>
+        <div class="row">
+          <input id="jan" inputmode="numeric" maxlength="13" value="${esc(p.jan)}" placeholder="バーコードの数字">
+          <button class="btn small secondary btn-inline" id="scanJan" type="button" style="flex:0 0 auto">📷 読取</button>
+        </div>
+        <div id="reader" class="hidden" style="margin-top:8px"></div>
+        <label class="btn small ghost">🖼 バーコードの写真から読み取る<input id="barPhoto" type="file" accept="image/*" class="hidden"></label>
+        <button class="btn small ghost" id="lookupBtn" type="button">JANから商品情報を取得</button>
+
+        <label class="f" for="name">商品名 *</label>
+        <input id="name" value="${esc(p.name)}" placeholder="例: 午後の紅茶 ミルクティー">
+        <div id="nameCands"></div>
+        <label class="f" for="maker">メーカー</label>
+        <input id="maker" value="${esc(p.maker)}" placeholder="例: キリン">
+        <label class="f" for="category">カテゴリ</label>
+        <input id="category" list="catList" value="${esc(p.category)}" placeholder="例: 飲料">
+        <datalist id="catList">${categories.map(c => `<option value="${esc(c)}">`).join('')}</datalist>
+        <div class="row">
+          <div><label class="f" for="size">内容量</label><input id="size" inputmode="decimal" value="${esc(p.size || '')}" placeholder="500"></div>
+          <div style="flex:0 0 110px"><label class="f" for="unit">単位</label>
+            <select id="unit">${['ml', 'L', 'g', 'kg', '個'].map(u => `<option ${u === p.unit ? 'selected' : ''}>${u}</option>`).join('')}</select></div>
+        </div>
+        <p class="small">「6個入り」など個数で売る商品は単位を「個」にしてください</p>
+        <label class="f">商品画像（任意）</label>
+        <div class="row">
+          <div id="imgPrev" style="flex:0 0 64px">${image ? `<img class="thumb" src="${image}" style="width:64px;height:64px;border-radius:8px;object-fit:cover">` : ''}</div>
+          <label class="btn small secondary" style="margin:0">📷 撮影・選択<input id="img" type="file" accept="image/*" class="hidden"></label>
+        </div>
+        <label class="check"><input type="checkbox" id="pending" ${p.forceStatus === '未特定' ? 'checked' : ''}> 商品をまだ特定できていない（未特定として保留）</label>
+        <p class="small">状態: JANと容量がそろうと「確定」、商品名だけなら「暫定」になります</p>
+        <button class="btn" id="save" type="button">${isNew ? '登録する' : '保存する'}</button>
+        ${!isNew ? `<button class="btn danger" id="delete" type="button">この商品を削除</button>` : ''}
+      </div>`;
+
+    const lookup = async () => {
+      const jan = $('#jan').value.replace(/\D/g, '');
+      const box = $('#lookupMsg');
+      if (!Units.isValidJan(jan)) { toast('JANコードが正しくありません'); return; }
+      if (!settings.workerUrl) { box.innerHTML = `<div class="notice">価格取得サーバーが未設定のため、商品情報を自動取得できません。商品名などを入力してください。<a href="#settings">設定</a></div>`; return; }
+      box.innerHTML = `<div class="notice info"><span class="spinner"></span> 商品情報を検索中…</div>`;
+      try {
+        const g = await Market.lookupJan(jan);
+        if (!g) { box.innerHTML = `<div class="notice">このJANコードの商品情報が見つかりませんでした。商品名などを入力してください。</div>`; return; }
+        if (!$('#name').value) $('#name').value = g.name;
+        if (!$('#maker').value && g.maker) $('#maker').value = g.maker;
+        if (!$('#size').value && g.size) {
+          const ml = g.unit === 'ml' && g.size >= 1000 && g.size % 100 === 0;
+          const kg = g.unit === 'g' && g.size >= 1000 && g.size % 100 === 0;
+          $('#size').value = ml || kg ? g.size / 1000 : g.size;
+          $('#unit').value = ml ? 'L' : kg ? 'kg' : g.unit;
+        }
+        box.innerHTML = `<div class="notice info">通販サイトの商品名から入力しました。<strong>商品名・容量が目の前の商品と同じか確認してください。</strong></div>`;
+        if (g.candidates.length > 1) {
+          $('#nameCands').innerHTML = `<details><summary>他の商品名候補</summary>${g.candidates.map(c => `<button type="button" class="btn small ghost cand">${esc(Market.cleanName(c))}</button>`).join('')}</details>`;
+          $$('.cand').forEach(b => b.addEventListener('click', () => { $('#name').value = b.textContent; }));
+        }
+      } catch (e) {
+        box.innerHTML = `<div class="notice error">商品情報を取得できませんでした: ${esc(e.message)}</div>`;
+      }
+    };
+    $('#lookupBtn').addEventListener('click', lookup);
+    $('#scanJan').addEventListener('click', async () => {
+      $('#reader').classList.remove('hidden');
+      try {
+        await Scanner.start('reader', code => {
+          $('#jan').value = code; $('#reader').classList.add('hidden');
+          toast('JANコードを読み取りました'); lookup();
+        });
+      } catch (e) { toast(e.message); $('#reader').classList.add('hidden'); }
+    });
+    $('#barPhoto').addEventListener('change', async e => {
+      const f = e.target.files[0]; if (!f) return;
+      try { $('#jan').value = await Scanner.scanFile(f); toast('JANコードを読み取りました'); lookup(); }
+      catch (err) { toast(err.message, 3500); }
+      e.target.value = '';
+    });
+    $('#img').addEventListener('change', async e => {
+      const f = e.target.files[0]; if (!f) return;
+      image = await resizeImage(f);
+      $('#imgPrev').innerHTML = `<img src="${image}" style="width:64px;height:64px;border-radius:8px;object-fit:cover">`;
+    });
+    $('#save').addEventListener('click', async () => {
+      const jan = $('#jan').value.replace(/\D/g, '');
+      if (jan && !Units.isValidJan(jan)) { toast('JANコードが正しくありません'); return; }
+      const name = $('#name').value.trim();
+      if (!name && !$('#pending').checked) { toast('商品名を入力してください'); return; }
+      if (jan) {
+        const dup = await DB.findProductByJan(jan);
+        if (dup && dup.id !== p.id) {
+          if (isNew) { toast('このJANの商品は登録済みです'); go(`#judge/${dup.id}${q.price ? '?price=' + q.price : ''}`); return; }
+          if (!confirm(`同じJANの商品「${dup.name}」が登録済みです。この商品の購入履歴を「${dup.name}」に統合しますか？`)) return;
+          await DB.mergeProduct(p.id, dup.id);
+          toast('統合しました'); go(`#item/${dup.id}`); return;
+        }
+      }
+      const b = Units.toBase(Number($('#size').value), $('#unit').value);
+      const saved = await DB.saveProduct({
+        ...p, jan, name, maker: $('#maker').value.trim(), category: $('#category').value.trim(),
+        size: b ? b.size : null, unit: b ? b.unit : null, image,
+        forceStatus: $('#pending').checked ? '未特定' : null,
+      });
+      toast(isNew ? '登録しました' : '保存しました');
+      if (q.next === 'judge') { history.replaceState(null, '', `#judge/${saved.id}${q.price ? '?price=' + q.price : ''}`); route(); }
+      else go(`#item/${saved.id}`);
+    });
+    if (!isNew) {
+      $('#delete').addEventListener('click', async () => {
+        if (!confirm('この商品を削除しますか？')) return;
+        try { await DB.deleteProduct(p.id); toast('削除しました'); go('#history'); }
+        catch (e) { alert(e.message); }
+      });
+      // 大きい単位で表示
+      if (p.unit === 'ml' && p.size >= 1000 && p.size % 100 === 0) { $('#size').value = p.size / 1000; $('#unit').value = 'L'; }
+      if (p.unit === 'g' && p.size >= 1000 && p.size % 100 === 0) { $('#size').value = p.size / 1000; $('#unit').value = 'kg'; }
+    }
+    if (isNew && q.jan) lookup();
+  }
+
+  // ========== 購入履歴（商品一覧） ==========
+  async function viewHistory(q) {
+    setTitle('購入履歴', false);
+    const [products, purchases] = await Promise.all([DB.all('products'), DB.all('purchases')]);
+    const byProduct = {};
+    purchases.forEach(u => { (byProduct[u.productId] = byProduct[u.productId] || []).push(u); });
+    let filter = q.filter || 'all';
+    view.innerHTML = `
+      <input id="q" type="search" placeholder="商品を検索" style="margin-bottom:10px">
+      <div class="row" style="margin-bottom:10px">
+        <button class="btn small ${filter === 'all' ? '' : 'ghost'}" data-f="all" type="button">すべて</button>
+        <button class="btn small ${filter === 'pending' ? '' : 'ghost'}" data-f="pending" type="button">暫定・未特定</button>
+      </div>
+      <div class="card"><ul class="list" id="hlist"></ul></div>
+      <a class="btn secondary" href="#purchase/new">＋ 購入を手入力で記録</a>`;
+    const render = () => {
+      const s = Units.normalize($('#q').value).toLowerCase();
+      const list = products
+        .filter(p => filter === 'all' || p.status !== '確定')
+        .filter(p => !s || Units.normalize(`${p.name} ${p.maker} ${p.jan} ${(p.receiptNames || []).join(' ')}`).toLowerCase().includes(s))
+        .map(p => {
+          const us = (byProduct[p.id] || []).sort((a, b) => (a.date < b.date ? -1 : 1));
+          return { p, us, last: us.length ? us[us.length - 1].date : '' };
+        })
+        .sort((a, b) => (a.last < b.last ? 1 : a.last > b.last ? -1 : 0));
+      $('#hlist').innerHTML = list.length ? list.map(({ p, us }) => {
+        const st = Judge.stats(us.map(u => u.unitPrice));
+        return `<li><a class="item" href="#item/${p.id}">${thumb(p)}<div class="grow">
+          <div class="name">${esc(p.name || '（名前なし）')} ${statusBadge(p.status)}${sampleBadge(p)}</div>
+          <div class="small">${esc(Units.sizeLabel(p.size, p.unit))}　${st ? `最安 ${yen(st.min)}・平均 ${yen(st.mean)}・${st.count}回` : '購入履歴なし'}</div>
+        </div>›</a></li>`;
+      }).join('') : '<li class="sub">該当する商品がありません</li>';
+    };
+    $('#q').addEventListener('input', render);
+    $$('[data-f]').forEach(b => b.addEventListener('click', () => {
+      filter = b.dataset.f;
+      $$('[data-f]').forEach(x => x.classList.toggle('ghost', x.dataset.f !== filter));
+      render();
+    }));
+    render();
+  }
+
+  /** 価格推移のグラフ（SVG） */
+  function chartSvg(purchases) {
+    const pts = purchases.filter(u => u.unitPrice > 0);
+    if (pts.length < 2) return '<p class="small">購入が2回以上になるとグラフを表示します</p>';
+    const W = 340, H = 160, L = 46, R = 10, T = 12, B = 26;
+    const vals = pts.map(u => u.unitPrice);
+    let min = Math.min(...vals), max = Math.max(...vals);
+    if (min === max) { min -= 10; max += 10; }
+    const pad = (max - min) * 0.15; min -= pad; max += pad;
+    const x = i => L + (W - L - R) * (pts.length === 1 ? 0.5 : i / (pts.length - 1));
+    const y = v => T + (H - T - B) * (1 - (v - min) / (max - min));
+    const minIdx = vals.indexOf(Math.min(...vals));
+    const line = pts.map((u, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(u.unitPrice).toFixed(1)}`).join(' ');
+    const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+    return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="購入価格の推移">
+      <line x1="${L}" x2="${W - R}" y1="${y(mean)}" y2="${y(mean)}" stroke="#999" stroke-dasharray="4 4"/>
+      <text x="${W - R}" y="${y(mean) - 4}" font-size="10" fill="#777" text-anchor="end">平均 ${Math.round(mean)}円</text>
+      <text x="${L - 6}" y="${y(max - pad) + 4}" font-size="10" fill="#777" text-anchor="end">${Math.round(max - pad)}</text>
+      <text x="${L - 6}" y="${y(min + pad) + 4}" font-size="10" fill="#777" text-anchor="end">${Math.round(min + pad)}</text>
+      <path d="${line}" fill="none" stroke="#1f6feb" stroke-width="2.5"/>
+      ${pts.map((u, i) => `<circle cx="${x(i)}" cy="${y(u.unitPrice)}" r="${i === minIdx ? 5 : 3.5}" fill="${i === minIdx ? '#138a43' : '#1f6feb'}"/>`).join('')}
+      <text x="${L}" y="${H - 6}" font-size="10" fill="#777">${fmtDate(pts[0].date)}</text>
+      <text x="${W - R}" y="${H - 6}" font-size="10" fill="#777" text-anchor="end">${fmtDate(pts[pts.length - 1].date)}</text>
+    </svg>`;
+  }
+
+  // ========== 商品別の購入履歴 ==========
+  async function viewItem(id) {
+    const p = await DB.get('products', id);
+    if (!p) { view.innerHTML = '<div class="notice error">商品が見つかりません</div>'; return; }
+    setTitle('商品別の購入履歴');
+    const us = await DB.purchasesOf(id);
+    const st = Judge.stats(us.map(u => u.unitPrice));
+    const others = (await DB.all('products')).filter(x => x.id !== id).sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ja'));
+    const hasSize = p.size > 0;
+    view.innerHTML = `
+      <div class="card">
+        <div class="list"><div class="item" style="display:flex;gap:10px">${thumb(p)}<div class="grow">
+          <div class="name">${esc(p.name || '（名前なし）')} ${statusBadge(p.status)}${sampleBadge(p)}</div>
+          <div class="small">${productLine(p)}${p.category ? '・' + esc(p.category) : ''}</div>
+          ${(p.receiptNames || []).length ? `<div class="small">レシート表記: ${esc(p.receiptNames.join('、'))}</div>` : ''}
+        </div></div></div>
+        ${p.status !== '確定' ? `<div class="notice" style="margin:10px 0 0">この商品は「${esc(p.status)}」です。JANコードと内容量を登録すると、市場価格との比較や容量をそろえた比較が正確になります。</div>` : ''}
+        <div class="row">
+          <a class="btn" href="#judge/${id}">⚖️ 価格判定</a>
+          <a class="btn secondary" href="#product/${id}">編集・補完</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>購入価格のまとめ</h2>
+        ${st ? `<table class="kv">
+          <tr><td>過去最安値</td><td>${yen(st.min)}</td></tr>
+          <tr><td>平均購入価格</td><td>${yen(st.mean)}</td></tr>
+          <tr><td>直近の購入価格</td><td>${yen(us[us.length - 1].unitPrice)}</td></tr>
+          <tr><td>最高値</td><td>${yen(st.max)}</td></tr>
+          ${hasSize ? `<tr><td>最安値の単価（${Units.baseLabel(p.unit)}）</td><td>${yen(Units.unitPrice(st.min, p.size, p.unit))}</td></tr>` : ''}
+          <tr><td>購入回数</td><td>${st.count}回</td></tr></table>
+          <h3>価格の推移（1つあたり）</h3>${chartSvg(us)}` : '<p class="sub">まだ購入履歴がありません</p>'}
+      </div>
+      <div class="card">
+        <h2>購入履歴</h2>
+        <ul class="list">${us.slice().reverse().map(u => `<li>
+          <a class="item" href="#purchase/${u.id}"><div class="grow">
+            <div><strong>${yen(u.unitPrice)}</strong>${u.quantity > 1 ? ` × ${u.quantity}` : ''}　${u.priceKind && u.priceKind !== '通常' ? `<span class="badge 暫定">${esc(u.priceKind)}</span>` : ''}${sampleBadge(u)}</div>
+            <div class="small">${fmtDate(u.date)}・${esc(u.store || '店舗未入力')}・${esc(u.source || '')}</div>
+          </div>›</a></li>`).join('') || '<li class="sub">なし</li>'}</ul>
+        <a class="btn secondary" href="#purchase/new?pid=${id}">＋ 購入を記録</a>
+      </div>
+      ${others.length ? `<div class="card">
+        <h2>他の商品に統合</h2>
+        <p class="small">レシートで別の商品として登録されたものが同じ商品だった場合、購入履歴をまとめられます。この商品は削除されます。</p>
+        <select id="mergeTo"><option value="">統合先を選ぶ</option>${others.map(o => `<option value="${o.id}">${esc(o.name)}（${esc(Units.sizeLabel(o.size, o.unit))}）</option>`).join('')}</select>
+        <button class="btn ghost" id="mergeBtn" type="button">統合する</button>
+      </div>` : ''}`;
+    const mb = $('#mergeBtn');
+    if (mb) mb.addEventListener('click', async () => {
+      const to = $('#mergeTo').value;
+      if (!to) { toast('統合先を選んでください'); return; }
+      if (!confirm('この商品の購入履歴を選んだ商品に移し、この商品を削除します。よろしいですか？')) return;
+      const target = await DB.get('products', to);
+      target.receiptNames = [...new Set([...(target.receiptNames || []), ...(p.receiptNames || []), p.name].filter(Boolean))];
+      await DB.saveProduct(target);
+      await DB.mergeProduct(id, to);
+      toast('統合しました'); go(`#item/${to}`);
+    });
+  }
+
+  // ========== 購入の記録・編集 ==========
+  async function viewPurchase(id, q) {
+    const isNew = id === 'new';
+    const u = isNew ? { productId: q.pid || '', date: today(), unitPrice: '', quantity: 1, discount: 0, priceKind: '通常', store: (await storeNames())[0] || '', source: '手入力' } : await DB.get('purchases', id);
+    if (!u) { view.innerHTML = '<div class="notice error">見つかりません</div>'; return; }
+    setTitle(isNew ? '購入を記録' : '購入を編集');
+    const products = (await DB.all('products')).sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ja'));
+    view.innerHTML = `
+      <div class="card">
+        <label class="f" for="pid">商品</label>
+        <select id="pid"><option value="">選んでください</option>${products.map(p => `<option value="${p.id}" ${p.id === u.productId ? 'selected' : ''}>${esc(p.name || '（名前なし）')}（${esc(Units.sizeLabel(p.size, p.unit))}）</option>`).join('')}</select>
+        <a class="small" href="#product/new">商品が一覧にない場合は先に登録</a>
+        <label class="f" for="price">1つあたりの支払額（税込）</label>
+        <div class="price-wrap"><input id="price" class="price-input" inputmode="numeric" value="${esc(u.unitPrice)}"></div>
+        <div class="row">
+          <div><label class="f" for="qty">数量</label><input id="qty" inputmode="numeric" value="${esc(u.quantity)}"></div>
+          <div><label class="f" for="date">購入日</label><input id="date" type="date" value="${esc(u.date)}"></div>
+        </div>
+        <label class="f" for="store">店舗</label>
+        <input id="store" list="storeList" value="${esc(u.store)}">
+        <datalist id="storeList">${(await storeNames()).map(s => `<option value="${esc(s)}">`).join('')}</datalist>
+        <label class="f" for="kind">価格の種類</label>
+        <select id="kind">${['通常', 'セール', 'クーポン利用'].map(k => `<option ${k === u.priceKind ? 'selected' : ''}>${k}</option>`).join('')}</select>
+        <label class="f" for="point">ポイント還元（任意・判定には含めません）</label>
+        <input id="point" inputmode="numeric" value="${esc(u.pointBack || '')}" placeholder="例: 10">
+        <p class="small">登録元: ${esc(u.source)}</p>
+        <button class="btn" id="save" type="button">保存する</button>
+        ${!isNew ? '<button class="btn danger" id="del" type="button">この購入履歴を削除</button>' : ''}
+      </div>`;
+    $('#save').addEventListener('click', async () => {
+      const pid = $('#pid').value;
+      const price = Number($('#price').value);
+      if (!pid) { toast('商品を選んでください'); return; }
+      if (!(price > 0)) { toast('価格を入力してください'); return; }
+      const product = await DB.get('products', pid);
+      const qty = Math.max(1, Number($('#qty').value) || 1);
+      await DB.put('purchases', {
+        ...u, id: u.id || DB.newId('u'), productId: pid, unitPrice: price, quantity: qty, totalPrice: price * qty,
+        date: $('#date').value || today(), store: $('#store').value.trim(), priceKind: $('#kind').value,
+        pointBack: Number($('#point').value) || 0, status: product.status,
+        size: u.size || product.size || null, unit: u.unit || product.unit || null,
+        createdAt: u.createdAt || new Date().toISOString(),
+      });
+      toast('保存しました'); go(`#item/${pid}`);
+    });
+    if (!isNew) $('#del').addEventListener('click', async () => {
+      if (!confirm('この購入履歴を削除しますか？')) return;
+      await DB.del('purchases', u.id); toast('削除しました'); go(`#item/${u.productId}`);
+    });
+  }
+
+  // ========== レシート読み取り ==========
+  let receiptDraft = null; // 読み取り途中の内容（画面を離れても保持）
+
+  async function viewReceipt() {
+    setTitle('レシートを読み取る', false);
+    if (receiptDraft) return renderReceiptEdit();
+    view.innerHTML = `
+      <div class="card">
+        <label class="btn">📷 レシートを撮影<input id="cam" type="file" accept="image/*" capture="environment" class="hidden"></label>
+        <label class="btn secondary">🖼 写真から選ぶ<input id="pick" type="file" accept="image/*" class="hidden"></label>
+        <button class="btn ghost" id="manual" type="button">✍️ 手入力で登録</button>
+        <p class="small">文字の読み取りはこのiPhoneの中で行い、画像は外部に送信しません。初回は日本語データ（約15MB）をダウンロードするため時間がかかります。</p>
+        <p class="small">きれいに読むコツ: 明るい場所で、レシートをまっすぐ・画面いっぱいに撮影してください。長いレシートは2回に分けて撮影できます。</p>
+      </div>
+      <div class="card hidden" id="ocrBox">
+        <p id="ocrMsg">準備中…</p>
+        <div class="progress"><div id="ocrBar"></div></div>
+      </div>`;
+    const run = async file => {
+      if (!file) return;
+      $('#ocrBox').classList.remove('hidden');
+      try {
+        const text = await Receipt.recognize(file, (label, p) => {
+          $('#ocrMsg').textContent = `${label}… ${Math.round(p * 100)}%`;
+          $('#ocrBar').style.width = `${Math.round(p * 100)}%`;
+        });
+        const parsed = Receipt.parse(text);
+        receiptDraft = { ...parsed, rawText: text, file, saveImage: false };
+        if (!parsed.items.length) toast('商品を読み取れませんでした。手入力で追加できます', 3500);
+        renderReceiptEdit();
+      } catch (e) {
+        $('#ocrMsg').innerHTML = `<span style="color:var(--expensive)">読み取りに失敗しました: ${esc(e.message)}</span><br>手入力で登録できます。`;
+      }
+    };
+    $('#cam').addEventListener('change', e => run(e.target.files[0]));
+    $('#pick').addEventListener('change', e => run(e.target.files[0]));
+    $('#manual').addEventListener('click', () => {
+      receiptDraft = { store: '', date: today(), total: null, items: [{ name: '', total: '', quantity: 1, discount: 0, priceKind: '通常' }], rawText: '', manual: true };
+      renderReceiptEdit();
+    });
+  }
+
+  async function renderReceiptEdit() {
+    resetView();
+    const d = receiptDraft;
+    const products = (await DB.all('products')).sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ja'));
+    // 初回のみ、登録済み商品との照合を行う
+    d.items.forEach(it => {
+      if (it.choice === undefined) {
+        const m = it.name ? Receipt.bestMatch(it.name, products) : null;
+        it.choice = m ? `p:${m.product.id}` : 'new';
+      }
+      if (it.include === undefined) it.include = true;
+    });
+    const options = it => `
+      <option value="new" ${it.choice === 'new' ? 'selected' : ''}>新しい商品として登録（暫定）</option>
+      <option value="unknown" ${it.choice === 'unknown' ? 'selected' : ''}>商品を特定できない（未特定で保留）</option>
+      ${products.map(p => `<option value="p:${p.id}" ${it.choice === 'p:' + p.id ? 'selected' : ''}>登録済み: ${esc(p.name)}（${esc(Units.sizeLabel(p.size, p.unit))}）</option>`).join('')}`;
+    const sum = d.items.filter(i => i.include).reduce((a, i) => a + (Number(i.total) || 0) - (Number(i.discount) || 0), 0);
+    view.innerHTML = `
+      <div class="notice info">読み取り結果を確認し、違うところは修正してください。レシートでは商品名が省略されることがあるため、分からない商品は「未特定」で保留できます。</div>
+      <div class="card">
+        <label class="f" for="rStore">店舗名</label><input id="rStore" value="${esc(d.store)}" list="storeList">
+        <datalist id="storeList">${(await storeNames()).map(s => `<option value="${esc(s)}">`).join('')}</datalist>
+        <div class="row">
+          <div><label class="f" for="rDate">購入日</label><input id="rDate" type="date" value="${esc(d.date || today())}"></div>
+          <div><label class="f" for="rTotal">合計（レシート）</label><input id="rTotal" inputmode="numeric" value="${esc(d.total ?? '')}"></div>
+        </div>
+        <p class="small">選択中の商品の合計: <strong id="sumOut">${yen(sum)}</strong>${d.total ? `（レシート合計との差 ${signYen(sum - d.total)}・税や対象外の行で差が出ることがあります）` : ''}</p>
+      </div>
+      <div id="items">${d.items.map((it, i) => `
+        <div class="receipt-item ${it.include ? '' : 'excluded'}" data-i="${i}">
+          <label class="check" style="margin:0 0 6px"><input type="checkbox" class="inc" ${it.include ? 'checked' : ''}> 登録する</label>
+          <input class="nm" value="${esc(it.name)}" placeholder="商品名（レシートの表記）">
+          <div class="row" style="margin-top:6px">
+            <div><span class="small">金額</span><input class="tt" inputmode="numeric" value="${esc(it.total)}"></div>
+            <div style="flex:0 0 64px"><span class="small">数量</span><input class="qt" inputmode="numeric" value="${esc(it.quantity)}"></div>
+            <div><span class="small">値引</span><input class="dc" inputmode="numeric" value="${esc(it.discount || '')}"></div>
+          </div>
+          <select class="ch" style="margin-top:6px">${options(it)}</select>
+        </div>`).join('')}</div>
+      <button class="btn ghost" id="addRow" type="button">＋ 行を追加</button>
+      <div class="card">
+        ${d.file ? `<label class="check"><input type="checkbox" id="saveImg" ${d.saveImage ? 'checked' : ''}> レシート画像も保存する（任意）</label>` : ''}
+        <button class="btn" id="register" type="button">購入履歴に登録</button>
+        <button class="btn ghost" id="cancel" type="button">やり直す</button>
+        ${d.rawText ? `<details><summary>読み取った文字をそのまま見る</summary><pre style="white-space:pre-wrap;font-size:13px">${esc(d.rawText)}</pre></details>` : ''}
+      </div>`;
+
+    const sync = () => {
+      d.store = $('#rStore').value; d.date = $('#rDate').value; d.total = Number($('#rTotal').value) || null;
+      $$('.receipt-item').forEach(el => {
+        const it = d.items[Number(el.dataset.i)];
+        it.include = el.querySelector('.inc').checked;
+        const newName = el.querySelector('.nm').value.trim();
+        // 手入力で商品名を入れたとき、登録済みの似た商品を自動で選ぶ
+        if (newName !== it.name && el.querySelector('.ch').value === 'new') {
+          const m = newName ? Receipt.bestMatch(newName, products) : null;
+          if (m) el.querySelector('.ch').value = `p:${m.product.id}`;
+        }
+        it.name = newName;
+        it.total = Number(el.querySelector('.tt').value) || 0;
+        it.quantity = Math.max(1, Number(el.querySelector('.qt').value) || 1);
+        it.discount = Number(el.querySelector('.dc').value) || 0;
+        it.choice = el.querySelector('.ch').value;
+        el.classList.toggle('excluded', !it.include);
+      });
+      const s = d.items.filter(i => i.include).reduce((a, i) => a + i.total - i.discount, 0);
+      $('#sumOut').textContent = yen(s);
+      if ($('#saveImg')) d.saveImage = $('#saveImg').checked;
+    };
+    view.addEventListener('input', sync);
+    view.addEventListener('change', sync);
+    $('#addRow').addEventListener('click', () => { sync(); d.items.push({ name: '', total: '', quantity: 1, discount: 0, priceKind: '通常', choice: 'new', include: true }); renderReceiptEdit(); });
+    $('#cancel').addEventListener('click', () => { if (confirm('読み取り結果を破棄しますか？')) { receiptDraft = null; viewReceipt(); } });
+    $('#register').addEventListener('click', async () => {
+      sync();
+      const items = d.items.filter(i => i.include && i.name && i.total > 0);
+      if (!items.length) { toast('登録する商品がありません（商品名と金額を入力してください）'); return; }
+      const hash = await Receipt.fingerprint({ store: d.store, date: d.date, total: d.total, items });
+      const dup = (await DB.byIndex('receipts', 'hash', hash))[0];
+      if (dup) {
+        if (!confirm(`同じ内容のレシートが ${fmtDateTime(dup.createdAt)} に登録済みです。二重登録になる可能性があります。それでも登録しますか？`)) return;
+      }
+      const receiptId = DB.newId('r');
+      let image = null;
+      if (d.saveImage && d.file) image = await resizeImage(d.file, 1200);
+      let count = 0;
+      for (const it of items) {
+        let product;
+        if (it.choice.startsWith('p:')) {
+          product = await DB.get('products', it.choice.slice(2));
+          if (product && it.name !== product.name && !(product.receiptNames || []).includes(it.name)) {
+            product.receiptNames = [...(product.receiptNames || []), it.name];
+            product = await DB.saveProduct(product);
+          }
+        }
+        if (!product) {
+          const parsed = Units.parseSize(it.name);
+          product = await DB.saveProduct({
+            name: it.name, maker: '', category: '', jan: '',
+            size: parsed && !parsed.countOnly && parsed.pack === 1 ? parsed.size : null,
+            unit: parsed && !parsed.countOnly && parsed.pack === 1 ? parsed.unit : null,
+            receiptNames: [it.name], forceStatus: it.choice === 'unknown' ? '未特定' : null,
+          });
+        }
+        const paid = it.total - it.discount;
+        await DB.put('purchases', {
+          id: DB.newId('u'), productId: product.id, date: d.date || today(),
+          unitPrice: Math.round(paid / it.quantity * 10) / 10, quantity: it.quantity, totalPrice: paid, discount: it.discount,
+          priceKind: it.discount > 0 ? (it.priceKind && it.priceKind !== '通常' ? it.priceKind : 'セール') : '通常',
+          store: d.store, source: d.manual ? '手入力' : 'レシート', status: product.status, receiptId,
+          receiptName: it.name, size: product.size || null, unit: product.unit || null, createdAt: new Date().toISOString(),
+        });
+        count++;
+      }
+      await DB.put('receipts', { id: receiptId, hash, store: d.store, date: d.date, total: d.total, itemCount: count, rawText: d.rawText || '', image, createdAt: new Date().toISOString() });
+      receiptDraft = null;
+      toast(`${count}件を購入履歴に登録しました`, 3000);
+      go('#history');
+    });
+  }
+
+  // ========== 設定・バックアップ ==========
+  async function viewSettings() {
+    setTitle('設定', false);
+    const s = await DB.getSettings();
+    const counts = {};
+    for (const st of ['products', 'purchases', 'marketFetches', 'receipts']) counts[st] = (await DB.all(st)).length;
+    const est = await DB.estimate();
+    const persisted = navigator.storage && navigator.storage.persisted ? await navigator.storage.persisted() : null;
+    view.innerHTML = `
+      <div class="card">
+        <h2>価格取得サーバー</h2>
+        <p class="small">市場価格の自動取得に使うサーバー（Cloudflare Workers）のURLです。APIキーはサーバー側に保存し、このアプリには保存しません。設置方法は同梱の「README.md」を参照してください。</p>
+        <label class="f" for="worker">サーバーのURL</label>
+        <input id="worker" type="url" value="${esc(s.workerUrl)}" placeholder="https://kaimono-price.xxxx.workers.dev">
+        <div class="row"><button class="btn secondary" id="saveWorker" type="button">保存</button><button class="btn ghost" id="testWorker" type="button">接続テスト</button></div>
+        <div id="testOut" class="small"></div>
+      </div>
+      <div class="card">
+        <h2>市場価格の判定基準</h2>
+        <label class="f" for="basis">比較の基準</label>
+        <select id="basis"><option value="median" ${s.marketBasis !== 'mean' ? 'selected' : ''}>中央値（極端な価格の影響を受けにくい）</option><option value="mean" ${s.marketBasis === 'mean' ? 'selected' : ''}>平均値</option></select>
+        <div class="row">
+          <div><label class="f" for="cheap">何%以上安ければ「安い」</label><input id="cheap" inputmode="numeric" value="${esc(s.cheapPct)}"></div>
+          <div><label class="f" for="exp">何%以上高ければ「高い」</label><input id="exp" inputmode="numeric" value="${esc(s.expensivePct)}"></div>
+        </div>
+        <button class="btn secondary" id="saveJudge" type="button">保存</button>
+      </div>
+      <div class="card">
+        <h2>データとバックアップ</h2>
+        <div class="notice">⚠️ データはこのiPhoneのブラウザ（Safari）内に保存されています。サーバーには保存されません。Safariの履歴・Webサイトデータを消去したり、長期間アプリを開かなかったりすると消える場合があります。定期的にバックアップしてください。</div>
+        <table class="kv">
+          <tr><td>商品</td><td>${counts.products}件</td></tr><tr><td>購入履歴</td><td>${counts.purchases}件</td></tr>
+          <tr><td>市場価格の取得履歴</td><td>${counts.marketFetches}件</td></tr><tr><td>レシート</td><td>${counts.receipts}件</td></tr>
+          ${est ? `<tr><td>使用容量</td><td>${(est.usage / 1024 / 1024).toFixed(1)}MB</td></tr>` : ''}
+          <tr><td>最終バックアップ</td><td>${s.lastBackupAt ? fmtDateTime(s.lastBackupAt) : 'なし'}</td></tr>
+          ${persisted !== null ? `<tr><td>データの保護</td><td>${persisted ? '有効' : '未設定'}</td></tr>` : ''}
+        </table>
+        ${persisted === false ? '<button class="btn ghost small" id="persist" type="button">データを消えにくくする（ブラウザに保護を依頼）</button>' : ''}
+        <label class="check"><input type="checkbox" id="withImg" checked> 商品画像・レシート画像も含める</label>
+        <button class="btn" id="export" type="button">💾 JSONで書き出す（エクスポート）</button>
+        <label class="btn secondary">📂 JSONを読み込む（インポート）<input id="import" type="file" accept="application/json,.json" class="hidden"></label>
+        <div id="importBox"></div>
+      </div>
+      <div class="card">
+        <h2>サンプルデータ</h2>
+        <p class="small">動作を試すための<strong>架空のデータ</strong>です。商品名に「【サンプル】」と付き、一覧には「サンプル」と表示されます。市場価格の判定には使われません。</p>
+        <div class="row"><button class="btn ghost" id="addSample" type="button">サンプルを追加</button><button class="btn danger" id="delSample" type="button">サンプルを削除</button></div>
+      </div>
+      <p class="small center">買い物価格チェッカー v1.0</p>`;
+
+    $('#saveWorker').addEventListener('click', async () => {
+      const v = $('#worker').value.trim();
+      if (v && !/^https:\/\//.test(v)) { toast('https:// から始まるURLを入力してください'); return; }
+      await DB.setSetting('workerUrl', v); toast('保存しました');
+    });
+    $('#testWorker').addEventListener('click', async () => {
+      const v = $('#worker').value.trim(); const out = $('#testOut');
+      if (!v) { out.textContent = 'URLを入力してください'; return; }
+      out.innerHTML = '<span class="spinner"></span> 接続中…';
+      try {
+        const r = await Market.testConnection(v);
+        out.innerHTML = r.ok ? `✅ 接続できました（Yahoo!ショッピング: ${r.yahoo ? '設定済み' : '<strong>未設定</strong>'}／楽天市場: ${r.rakuten ? '設定済み' : '未設定'}／写真で判定(Gemini): ${r.gemini ? '設定済み' : '<strong>未設定</strong>'}）` : '応答がありましたが、正しいサーバーではないようです';
+      } catch (e) { out.textContent = '❌ 接続できませんでした。URLを確認してください'; }
+    });
+    $('#saveJudge').addEventListener('click', async () => {
+      await DB.setSetting('marketBasis', $('#basis').value);
+      await DB.setSetting('cheapPct', Math.max(0, Number($('#cheap').value) || 5));
+      await DB.setSetting('expensivePct', Math.max(0, Number($('#exp').value) || 5));
+      toast('保存しました');
+    });
+    const ps = $('#persist');
+    if (ps) ps.addEventListener('click', async () => {
+      const ok = await navigator.storage.persist();
+      toast(ok ? 'データの保護が有効になりました' : 'ブラウザに許可されませんでした。ホーム画面に追加すると有効になりやすくなります', 3500);
+      viewSettings();
+    });
+    $('#export').addEventListener('click', async () => {
+      const { blob, name, counts: c } = await Backup.exportData({ includeImages: $('#withImg').checked });
+      const file = new File([blob], name, { type: 'application/json' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try { await navigator.share({ files: [file], title: name }); toast('書き出しました'); viewSettings(); return; }
+        catch (e) { if (e.name === 'AbortError') return; }
+      }
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+      toast(`書き出しました（商品${c.products}件・購入${c.purchases}件）`);
+      setTimeout(viewSettings, 500);
+    });
+    $('#import').addEventListener('change', async e => {
+      const f = e.target.files[0]; if (!f) return;
+      const box = $('#importBox');
+      try {
+        const { data, report } = await Backup.analyze(await f.text());
+        const label = { products: '商品', purchases: '購入履歴', marketFetches: '市場価格の履歴', receipts: 'レシート' };
+        box.innerHTML = `<div class="notice info" style="margin-top:10px">
+          <strong>${esc(f.name)}</strong>（${fmtDateTime(data.exportedAt)} 作成）<br>
+          ${Object.keys(label).map(k => `${label[k]}: ${report[k].total}件（うち既存と重複 ${report[k].duplicates}件）`).join('<br>')}
+          <p class="small">既存のデータは削除されません。重複したデータの扱いを選んでください。</p>
+          <button class="btn" id="impSkip" type="button">追加する（重複は既存を残す）</button>
+          <button class="btn secondary" id="impOver" type="button">追加する（重複はファイルで上書き）</button>
+        </div>`;
+        const run = async mode => {
+          const r = await Backup.importData(data, mode);
+          toast(`追加 ${r.added}件・上書き ${r.overwritten}件・スキップ ${r.skipped}件`, 3500);
+          viewSettings();
+        };
+        $('#impSkip').addEventListener('click', () => run('skip'));
+        $('#impOver').addEventListener('click', () => { if (confirm('重複したデータをファイルの内容で上書きします。よろしいですか？')) run('overwrite'); });
+      } catch (err) { box.innerHTML = `<div class="notice error" style="margin-top:10px">${esc(err.message)}</div>`; }
+    });
+    $('#addSample').addEventListener('click', async () => { await addSample(); toast('サンプルを追加しました'); viewSettings(); });
+    $('#delSample').addEventListener('click', async () => {
+      if (!confirm('サンプルデータを削除しますか？（ご自身のデータは削除されません）')) return;
+      for (const st of ['purchases', 'products']) for (const x of await DB.all(st)) if (x.sample) await DB.del(st, x.id);
+      toast('サンプルを削除しました'); viewSettings();
+    });
+  }
+
+  /** 動作確認用の架空データ（必ず sample: true を付ける） */
+  async function addSample() {
+    const a = await DB.saveProduct({ name: '【サンプル】緑茶 ペットボトル', maker: 'サンプル飲料', category: '飲料', size: 500, unit: 'ml', jan: '', sample: true });
+    const b = await DB.saveProduct({ name: '【サンプル】食器用洗剤 詰め替え', maker: 'サンプル日用品', category: '日用品', size: 400, unit: 'ml', jan: '', sample: true });
+    const rows = [[a, '2026-08-02', 128], [a, '2026-09-10', 118], [a, '2026-10-05', 108], [a, '2026-11-01', 124],
+      [b, '2026-07-20', 428], [b, '2026-09-01', 498], [b, '2026-10-18', 478]];
+    for (const [p, date, price] of rows) {
+      await DB.put('purchases', { id: DB.newId('u'), productId: p.id, date, unitPrice: price, quantity: 1, totalPrice: price, discount: 0, priceKind: '通常', store: 'サンプルスーパー', source: '手入力', status: p.status, size: p.size, unit: p.unit, sample: true, createdAt: new Date().toISOString() });
+    }
+  }
+
+  // ========== 画面の切り替え ==========
+  async function route() {
+    await Scanner.stop();
+    const raw = location.hash.slice(1) || 'home';
+    const [path, qs] = raw.split('?');
+    const [name, arg] = path.split('/');
+    const q = Object.fromEntries(new URLSearchParams(qs || ''));
+    document.querySelectorAll('nav.bottom a').forEach(a => {
+      const n = a.dataset.nav;
+      a.classList.toggle('active', n === name || (n === 'history' && ['item', 'purchase'].includes(name)) || (n === 'scan' && ['judge', 'snap', 'photo'].includes(name)));
+    });
+    resetView();
+    window.scrollTo(0, 0);
+    try {
+      switch (name) {
+        case 'home': await viewHome(); break;
+        case 'scan': await viewScan(); break;
+        case 'photo': await viewPhoto(); break;
+        case 'snap': await viewSnap(); break;
+        case 'compare': await viewCompare(); break;
+        case 'judge': await viewJudge(arg, q); break;
+        case 'receipt': await viewReceipt(); break;
+        case 'history': await viewHistory(q); break;
+        case 'item': await viewItem(arg); break;
+        case 'product': await viewProduct(arg || 'new', q); break;
+        case 'purchase': await viewPurchase(arg || 'new', q); break;
+        case 'settings': await viewSettings(); break;
+        default: await viewHome();
+      }
+    } catch (e) {
+      console.error(e);
+      view.innerHTML = `<div class="notice error">エラーが発生しました: ${esc(e.message)}</div><a class="btn" href="#home">ホームへ</a>`;
+    }
+  }
+  window.addEventListener('hashchange', route);
+  if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', route);
+  else route();
+
+  if ('serviceWorker' in navigator && location.protocol === 'https:') {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+})();
+
+</script>
+</body>
+</html>
